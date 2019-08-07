@@ -16,6 +16,9 @@ public class CommonUtils {
         ERROR_BUSINESS.put("M00005","Order not created !");
 
         ERROR_BUSINESS.put("W00001","Données invalids");
+
+        ERROR_BUSINESS.put("A00001","User not found!");
+
     }
 
     public static String generateReference() {

@@ -4,6 +4,7 @@ C:\Users\samir\Documents\workspace\payby\common\src\main\java\ma\payby\common\dt
 C:\Users\samir\Documents\workspace\payby\common\src\main\java\ma\payby\common\dto\OrderEditStatusRequestDTO.java
 C:\Users\samir\Documents\workspace\payby\common\src\main\java\ma\payby\common\utils\CommonUtils.java
 C:\Users\samir\Documents\workspace\payby\common\src\main\java\ma\payby\common\enums\WalletStatus.java
+C:\Users\samir\Documents\workspace\payby\common\src\main\java\ma\payby\common\dto\UserDTO.java
 C:\Users\samir\Documents\workspace\payby\common\src\main\java\ma\payby\common\exception\BusinessException.java
 C:\Users\samir\Documents\workspace\payby\common\src\main\java\ma\payby\common\dto\ConfirmPaymentWalletRequestDTO.java
 C:\Users\samir\Documents\workspace\payby\common\src\main\java\ma\payby\common\dto\MerchandDTO.java

@@ -4,5 +4,7 @@ ma\payby\common\jpa\model\Order.class
 ma\payby\common\jpa\repository\OrderRepository.class
 ma\payby\common\jpa\repository\MerchandRepository.class
 ma\payby\common\jpa\model\Merchand.class
+ma\payby\common\jpa\model\User.class
+ma\payby\common\jpa\repository\UserRepository.class
 ma\payby\common\jpa\model\Customer.class
 ma\payby\common\jpa\repository\PaimentRepository.class

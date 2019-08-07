@@ -16,7 +16,6 @@ public class OrderDTO {
     private String reference;
     private String merchandOrderID;
 
-
     public Long getOrderID() {
         return orderID;
     }

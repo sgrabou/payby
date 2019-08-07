@@ -13,6 +13,7 @@ ma\payby\common\enums\OrderStatus.class
 ma\payby\common\dto\ConfirmPaymentWalletRequestDTO.class
 ma\payby\common\dto\MerchandDTO.class
 ma\payby\common\enums\MerchandStatus.class
+ma\payby\common\dto\UserDTO.class
 ma\payby\common\dto\ConfirmPaymentMerchandRequestDTO.class
 ma\payby\common\utils\CommonUtils.class
 ma\payby\common\enums\WalletStatus.class

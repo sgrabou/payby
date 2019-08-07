@@ -21,5 +21,6 @@
 		<module>merchand-service</module>
 		<module>wallet-service</module>
 		<module>proxy-service</module>
+		<module>frontend-backoffice</module>
     </modules>
 </project>
