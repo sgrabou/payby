@@ -1,29 +1,19 @@
 import React, { Component, Fragment } from 'react';
-import axios from 'axios';
-import logo_marchand from '../img/logo_paracasa.jpg';
 
 import {Alert, Badge, NavbarBrand, Table} from 'reactstrap';
 import logo from "../img/logo.png";
 import sopay_logo from "../img/sopay_logo.png";
 
-const reference = document.getElementById("reference").value;
-
 class Post extends Component {
 
-    constructor() {
-        super();
-        this.state = { reference: null,merchandOrderID: null,amount: null, orderDetails: null,merchandUrlWebsite: null,customerFirstName: null,
-            customerLastName: null,customerAddress: null,customerMobileNumber: null,customerEmail: null }
+    constructor(props) {
+        super(props);
+        this.state = { reference: this.props.reference, merchandOrderID: this.props.merchandOrderID,amount: this.props.amount, orderDetails: this.props.orderDetails,
+            merchandUrlWebsite: this.props.merchandUrlWebsite,customerFirstName: this.props.customerFirstName, customerLastName: this.props.customerLastName,
+            customerAddress: this.props.customerAddress, customerMobileNumber: this.props.customerMobileNumber,customerEmail: this.props.customerEmail,
+            merchandLogo: this.props.merchandLogo }
+
     }
-   componentDidMount() {
-    axios.get('http://localhost:8060/merchand/api/v1/order/reference/'+reference)
-        .then(response => this.setState({ reference: response.data.reference,
-          merchandOrderID: response.data.merchandOrderID, amount: response.data.amount, orderDetails: response.data.orderDetails,
-          merchandUrlWebsite: response.data.merchandUrlWebsite,customerFirstName: response.data.customer.firstName,
-          customerLastName: response.data.customer.lastName,customerAddress: response.data.customerAddress,
-          customerMobileNumber: response.data.customerMobileNumber,customerEmail: response.data.customerEmail
-        }));
-  }
 
   render() {
     return (
@@ -31,8 +21,8 @@ class Post extends Component {
         { this.state.amount && <div className="position-relative">
           <Alert color="secondary">
             <div className="container">
-              <strong>www.para-casa.com</strong>
-              <img src={logo_marchand} alt="logo" className="float-right" height="24"/>
+              <strong>{this.state.merchandUrlWebsite}</strong>
+              <img src={this.state.merchandLogo} alt="logo" className="float-right" height="24"/>
 
             </div>
           </Alert>
@@ -49,12 +39,12 @@ class Post extends Component {
               </tr>
               <tr>
                 <th>Montant</th>
-                <td>{this.state.amount}</td>
+                <td>{this.state.amount+" DH"}</td>
               </tr>
               </tbody>
             </Table>
             <div className="title">
-            <srong>INFORMATIONS DU CLIENT</srong>
+            <h5>INFORMATIONS DU CLIENT</h5>
             </div>
             <Table>
               <tbody>

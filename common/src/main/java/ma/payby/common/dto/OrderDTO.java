@@ -1,8 +1,10 @@
 package ma.payby.common.dto;
 
 import ma.payby.common.enums.OrderStatus;
+import ma.payby.common.utils.NumberUtils;
 
 import java.math.BigDecimal;
+import java.text.DecimalFormat;
 import java.util.Date;
 
 public class OrderDTO {
@@ -15,6 +17,7 @@ public class OrderDTO {
     private CustomerDTO customer;
     private String reference;
     private String merchandOrderID;
+    private String displayedAmount;
 
     public Long getOrderID() {
         return orderID;
@@ -86,5 +89,9 @@ public class OrderDTO {
 
     public void setMerchandOrderID(String merchandOrderID) {
         this.merchandOrderID = merchandOrderID;
+    }
+
+    public String getDisplayedAmount() {
+        return NumberUtils.formatNumber(this.amount);
     }
 }

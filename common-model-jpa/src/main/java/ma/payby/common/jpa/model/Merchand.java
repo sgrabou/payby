@@ -26,6 +26,10 @@ public class Merchand {
     private String merchandResponseURL;
     private String urlWebsite;
     private String paybyVersion;
+    private String logo;
+    @ManyToOne
+    @JoinColumn(name = "walletID")
+    private Wallet wallet;
 
     public Long getMerchandID() {
         return merchandID;
@@ -129,5 +133,21 @@ public class Merchand {
 
     public void setPaybyVersion(String paybyVersion) {
         this.paybyVersion = paybyVersion;
+    }
+
+    public String getLogo() {
+        return logo;
+    }
+
+    public void setLogo(String logo) {
+        this.logo = logo;
+    }
+
+    public Wallet getWallet() {
+        return wallet;
+    }
+
+    public void setWallet(Wallet wallet) {
+        this.wallet = wallet;
     }
 }

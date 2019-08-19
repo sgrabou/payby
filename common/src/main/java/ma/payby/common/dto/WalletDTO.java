@@ -9,6 +9,7 @@ public class WalletDTO {
     private String walletOwner;
     private String apiKey;
     private WalletStatus walletStatus;
+    private String logo;
 
     public Long getWalletID() {
         return walletID;
@@ -56,5 +57,13 @@ public class WalletDTO {
 
     public void setWalletStatus(WalletStatus walletStatus) {
         this.walletStatus = walletStatus;
+    }
+
+    public String getLogo() {
+        return logo;
+    }
+
+    public void setLogo(String logo) {
+        this.logo = logo;
     }
 }

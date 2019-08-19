@@ -17,6 +17,8 @@ public class MerchandDTO {
     private String merchandResponseURL;
     private String urlWebsite;
     private String paybyVersion;
+    private String logo;
+    private WalletDTO wallet;
 
     public Long getMerchandID() {
         return merchandID;
@@ -120,5 +122,21 @@ public class MerchandDTO {
 
     public void setPaybyVersion(String paybyVersion) {
         this.paybyVersion = paybyVersion;
+    }
+
+    public String getLogo() {
+        return logo;
+    }
+
+    public void setLogo(String logo) {
+        this.logo = logo;
+    }
+
+    public WalletDTO getWallet() {
+        return wallet;
+    }
+
+    public void setWallet(WalletDTO wallet) {
+        this.wallet = wallet;
     }
 }

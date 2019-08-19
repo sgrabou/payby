@@ -17,10 +17,8 @@ public class OrderMapper {
 
         CustomerDTO customerDTO = new CustomerDTO();
         BeanUtils.copyProperties(order.getCustomer(),customerDTO);
-        MerchandDTO merchandDTO = new MerchandDTO();
-        BeanUtils.copyProperties(order.getMerchand(), merchandDTO);
         orderDTO.setCustomer(customerDTO);
-        orderDTO.setMerchand(merchandDTO);
+        orderDTO.setMerchand(MerchandMapper.toMerchandDTO(order.getMerchand()));
 
         return orderDTO;
     }
@@ -30,10 +28,9 @@ public class OrderMapper {
         BeanUtils.copyProperties(orderDTO,order);
         Customer customer = new Customer();
         BeanUtils.copyProperties(orderDTO.getCustomer(),customer);
-        Merchand merchand = new Merchand();
-        BeanUtils.copyProperties(orderDTO.getMerchand(), merchand);
+
         order.setCustomer(customer);
-        order.setMerchand(merchand);
+        order.setMerchand(MerchandMapper.toMerchand(orderDTO.getMerchand()));
         return order;
     }
 
