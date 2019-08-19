@@ -27,10 +27,7 @@ class SideCard extends Component {
             popoverOpen: !this.state.popoverOpen
         });
     }
-    onClick(event) {
-        toggle();
-        func2();
-    }
+
     render() {
         return (
             <Fragment>
