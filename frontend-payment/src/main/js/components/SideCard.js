@@ -2,27 +2,35 @@ import React, { Component, Fragment } from 'react';
 
 import {
     Button, Alert, Card, CardImg, CardBody,
-    CardTitle, CardSubtitle, CardText, NavbarBrand
+    CardTitle, CardText, Popover, PopoverHeader, PopoverBody
 } from 'reactstrap';
 import sopay_logo from "../img/sopay_logo.png";
 import qr_code from "../img/qr_code.png";
 
 const CRCODE = 'https://i.imgur.com/CaKdFMq.jpg';
-const reference = document.getElementById("reference").value;
 
 class SideCard extends Component {
 
     constructor(props) {
         super(props);
+        this.toggle = this.toggle.bind(this);
         this.state = {
+            popoverOpen: false,
             reference: this.props.reference,
             walletName: this.props.walletName,
             walletLogo: this.props.walletLogo
         }
-
     }
-
-
+    toggle() {
+        navigator.clipboard.writeText(this.state.reference);
+        this.setState({
+            popoverOpen: !this.state.popoverOpen
+        });
+    }
+    onClick(event) {
+        toggle();
+        func2();
+    }
     render() {
         return (
             <Fragment>
@@ -40,10 +48,16 @@ class SideCard extends Component {
                         <CardTitle
                             className="align-items-center d-flex justify-content-center h6 font-weight-bold text-secondary">Cliquer
                             pour copier la référence</CardTitle>
-                        <Button color="primary" className="font-weight-bold">copier</Button>
+                        <Button id="Popover1" className="font-weight-bold" type="button" onClick={this.toggle} color="primary">
+                            Copier
+                        </Button>
+                        <Popover placement="top" isOpen={this.state.popoverOpen} target="Popover1" toggle={this.toggle}
+                                  >
+                            <PopoverHeader style={{backgroundColor:'#000',color:'#fff'}} >Référence copiée</PopoverHeader>
+                        </Popover>
                         <CardText className="align-items-center d-flex justify-content-center text-secondary mb-4"
                                   style={{fontSize: '0.75rem'}}>
-                            {reference}
+                            {this.state.reference}
                         </CardText>
                     </CardBody>
                 </Card>
