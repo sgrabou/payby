@@ -2,26 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f1777bb-9131-42fe-9d4e-304ac96c6fd3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/common-service/src/main/java/ma/payby/common/service/mapper/WalletMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/ma/payby/common/utils/NumberUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-model-jpa/src/main/java/ma/payby/common/jpa/model/Merchand.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-model-jpa/src/main/java/ma/payby/common/jpa/model/Merchand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-model-jpa/src/main/java/ma/payby/common/jpa/model/Wallet.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-model-jpa/src/main/java/ma/payby/common/jpa/model/Wallet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-model-jpa/target/classes/ma/payby/common/jpa/model/Merchand.class" beforeDir="false" afterPath="$PROJECT_DIR$/common-model-jpa/target/classes/ma/payby/common/jpa/model/Merchand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-model-jpa/target/classes/ma/payby/common/jpa/model/Wallet.class" beforeDir="false" afterPath="$PROJECT_DIR$/common-model-jpa/target/classes/ma/payby/common/jpa/model/Wallet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-service/src/main/java/ma/payby/common/service/mapper/MerchandMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-service/src/main/java/ma/payby/common/service/mapper/MerchandMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-service/src/main/java/ma/payby/common/service/mapper/OrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-service/src/main/java/ma/payby/common/service/mapper/OrderMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-service/target/classes/ma/payby/common/service/mapper/MerchandMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/common-service/target/classes/ma/payby/common/service/mapper/MerchandMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/ma/payby/common/dto/MerchandDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/ma/payby/common/dto/MerchandDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/ma/payby/common/dto/OrderDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/ma/payby/common/dto/OrderDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/ma/payby/common/dto/WalletDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/ma/payby/common/dto/WalletDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/ma/payby/common/dto/MerchandDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/ma/payby/common/dto/MerchandDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/ma/payby/common/dto/OrderDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/ma/payby/common/dto/OrderDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/ma/payby/common/dto/WalletDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/ma/payby/common/dto/WalletDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend-payment/src/main/js/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend-payment/src/main/js/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend-payment/src/main/js/components/Post.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend-payment/src/main/js/components/Post.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend-payment/src/main/js/components/SideCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend-payment/src/main/js/components/SideCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend-payment/src/main/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend-payment/src/main/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/prestashop/1.6/Payby/PayBy.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/prestashop/1.6/Payby/PayBy.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/prestashop/1.6/Payby/config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/prestashop/1.6/Payby/config_fr.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/prestashop/1.6/Payby/controllers/front/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/prestashop/1.6/Payby/controllers/front/reponse.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/prestashop/1.6/Payby/controllers/front/validation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/prestashop/1.6/Payby/controllers/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/prestashop/1.6/Payby/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/prestashop/1.6/Payby/logo.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/prestashop/1.6/Payby/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/prestashop/1.6/Payby/logos/PayBy1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/prestashop/1.6/Payby/logos/PayBy16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/prestashop/1.6/Payby/logos/fpay.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/prestashop/1.6/Payby/logos/fpay16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/prestashop/1.6/Payby/logos/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/prestashop/1.6/Payby/logos/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/prestashop/1.6/Payby/package_PayBy/pbw_Function.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/prestashop/1.6/Payby/package_PayBy/send_Data.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/prestashop/1.6/Payby/pbw_16.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/prestashop/1.6/Payby/remoteAdminUrl.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/prestashop/1.6/Payby/remoteMarchantUrl.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/prestashop/1.6/Payby/result.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/prestashop/1.6/Payby/translations/en.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/prestashop/1.6/Payby/views/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/prestashop/1.6/Payby/views/templates/front/failed.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/prestashop/1.6/Payby/views/templates/front/fpay.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/prestashop/1.6/Payby/views/templates/front/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/prestashop/1.6/Payby/views/templates/front/result.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/prestashop/1.6/Payby/views/templates/front/result_abandoned.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/prestashop/1.6/Payby/views/templates/front/result_declined.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/prestashop/1.6/Payby/views/templates/front/result_success.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/prestashop/1.6/Payby/views/templates/front/success.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/prestashop/1.6/Payby/views/templates/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-service/target/classes/ma/payby/common/service/mapper/OrderMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/common-service/target/classes/ma/payby/common/service/mapper/OrderMapper.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/merchand-service/target/" />
     <ignored path="$PROJECT_DIR$/common/target/" />
@@ -50,8 +65,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontend-payment/src/main/js/App.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+            <state relative-caret-position="174">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
               </folding>
@@ -126,15 +141,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="98">
               <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin-service/src/main/java/ma/payby/services/admin/AdminApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
-              <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -311,73 +317,6 @@
               <item name="services" type="b2602c69:ProjectViewProjectNode" />
               <item name="payby" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="services" type="b2602c69:ProjectViewProjectNode" />
-              <item name="payby" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend-payment" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="services" type="b2602c69:ProjectViewProjectNode" />
-              <item name="payby" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend-payment" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="services" type="b2602c69:ProjectViewProjectNode" />
-              <item name="payby" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend-payment" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="services" type="b2602c69:ProjectViewProjectNode" />
-              <item name="payby" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend-payment" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="services" type="b2602c69:ProjectViewProjectNode" />
-              <item name="payby" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend-payment" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="services" type="b2602c69:ProjectViewProjectNode" />
-              <item name="payby" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend-payment" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="media" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="services" type="b2602c69:ProjectViewProjectNode" />
-              <item name="payby" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend-payment" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="media" type="462c0819:PsiDirectoryNode" />
-              <item name="merchand" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="services" type="b2602c69:ProjectViewProjectNode" />
-              <item name="payby" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend-payment" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="media" type="462c0819:PsiDirectoryNode" />
-              <item name="wallet" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -398,7 +337,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../tuto/react-webpack-starter" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/scripts" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
@@ -407,11 +346,11 @@
       <recent name="ma.payby.frontend.backoffice.utils" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\samir\Documents\workspace\payby07082019\payby\plugins\prestashop\1.6" />
       <recent name="C:\Users\samir\Documents\workspace\payby07082019\payby\frontend-payment\src\main\resources\static\media\wallet" />
       <recent name="C:\Users\samir\Documents\workspace\payby07082019\payby\frontend-payment\src\main\resources\static\media\merchand" />
       <recent name="C:\Users\samir\Documents\workspace\payby07082019\payby\frontend-payment\src\main\resources\static\media" />
       <recent name="C:\Users\samir\Documents\workspace\payby07082019\payby\frontend-payment\src\main\js" />
-      <recent name="C:\Users\samir\Documents\workspace\payby07082019\payby\frontend-payment\src\main\resources\static\img" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="ma.payby.common.service.mapper" />
@@ -420,11 +359,11 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\samir\Documents\workspace\payby07082019\payby\plugins\prestashop" />
       <recent name="C:\Users\samir\Documents\workspace\payby07082019\payby\frontend-payment\src\main\resources\static\media" />
       <recent name="C:\Users\samir\Documents\workspace\payby07082019\payby\frontend-payment\src\main\js" />
       <recent name="C:\Users\samir\Documents\workspace\payby07082019\payby\frontend-payment\src\main\resources\static\built" />
       <recent name="C:\Users\samir\Documents\workspace\payby07082019\payby\frontend-backoffice" />
-      <recent name="C:\Users\samir\Documents\workspace\payby07082019\payby\frontend-payment\src\main\js\components" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -725,7 +664,7 @@
       <workItem from="1565188156858" duration="40143000" />
       <workItem from="1565628643474" duration="4102000" />
       <workItem from="1565708659119" duration="1048000" />
-      <workItem from="1565870629254" duration="45170000" />
+      <workItem from="1565870629254" duration="45397000" />
     </task>
     <task id="LOCAL-00001" summary="frontendBackoffice">
       <created>1565184954254</created>
@@ -748,25 +687,31 @@
       <option name="project" value="LOCAL" />
       <updated>1566213029215</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="commit">
+      <created>1566228793084</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1566228793084</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90463000" />
+    <option name="totallyTimeSpent" value="90690000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Web" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.22692889" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.22692889" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Favorites" order="7" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Run Dashboard" order="0" sideWeight="0.7781845" visible="true" weight="0.30392158" />
+      <window_info anchor="bottom" id="Run Dashboard" order="0" sideWeight="0.7781845" visible="true" weight="0.30392158" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="2" weight="0.329653" />
       <window_info anchor="bottom" id="Java Enterprise" order="3" />
@@ -903,13 +848,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/ma/payby/common/dto/UserDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend-backoffice/src/main/java/ma/payby/frontend/backoffice/client/UserClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -1268,10 +1206,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/prestashop/Payby/log/SendData_2019-05-27.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/frontend-payment/src/main/js/App.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        <state relative-caret-position="174">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
           <folding>
             <element signature="e#0#51#0" expanded="true" />
           </folding>
