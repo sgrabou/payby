@@ -1,5 +1,5 @@
 server:
-  port: 8070
+  port: 8010
 
 eureka:
   client:
@@ -9,10 +9,14 @@ eureka:
 
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/payby
+    url: jdbc:mysql://localhost:3306/payby?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
     username: root
     password:
-
+  hikari:
+    connectionTimeout: 20000
+    maximumPoolSize: 5
+  main:
+    allow-bean-definition-overriding: true
   jpa:
     show-sql: true
     properties:

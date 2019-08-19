@@ -8,9 +8,11 @@
       <module fileurl="file://$PROJECT_DIR$/common-service/common-service.iml" filepath="$PROJECT_DIR$/common-service/common-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/config-service/config-service.iml" filepath="$PROJECT_DIR$/config-service/config-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/discovery-service/discovery-service.iml" filepath="$PROJECT_DIR$/discovery-service/discovery-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/frontend-backoffice/frontend-backoffice.iml" filepath="$PROJECT_DIR$/frontend-backoffice/frontend-backoffice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/frontend-payment/frontend-payment.iml" filepath="$PROJECT_DIR$/frontend-payment/frontend-payment.iml" />
       <module fileurl="file://$PROJECT_DIR$/merchand-service/merchand-service.iml" filepath="$PROJECT_DIR$/merchand-service/merchand-service.iml" />
-      <module fileurl="file://$PROJECT_DIR$/payby.iml" filepath="$PROJECT_DIR$/payby.iml" />
       <module fileurl="file://$PROJECT_DIR$/proxy-service/proxy-service.iml" filepath="$PROJECT_DIR$/proxy-service/proxy-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/services.iml" filepath="$PROJECT_DIR$/services.iml" />
       <module fileurl="file://$PROJECT_DIR$/wallet-service/wallet-service.iml" filepath="$PROJECT_DIR$/wallet-service/wallet-service.iml" />
     </modules>
   </component>

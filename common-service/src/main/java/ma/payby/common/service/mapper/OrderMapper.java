@@ -1,9 +1,6 @@
 package ma.payby.common.service.mapper;
 
-import ma.payby.common.dto.ConfirmPaymentMerchandRequestDTO;
-import ma.payby.common.dto.InitierPaymentMerchandRequestDTO;
-import ma.payby.common.dto.OrderDTO;
-import ma.payby.common.dto.OrderWalletResponseDTO;
+import ma.payby.common.dto.*;
 import ma.payby.common.enums.OrderStatus;
 import ma.payby.common.jpa.model.Customer;
 import ma.payby.common.jpa.model.Merchand;
@@ -17,6 +14,14 @@ public class OrderMapper {
     public static OrderDTO toOrderDTO(Order order){
         OrderDTO orderDTO = new OrderDTO();
         BeanUtils.copyProperties(order,orderDTO);
+
+        CustomerDTO customerDTO = new CustomerDTO();
+        BeanUtils.copyProperties(order.getCustomer(),customerDTO);
+        MerchandDTO merchandDTO = new MerchandDTO();
+        BeanUtils.copyProperties(order.getMerchand(), merchandDTO);
+        orderDTO.setCustomer(customerDTO);
+        orderDTO.setMerchand(merchandDTO);
+
         return orderDTO;
     }
 

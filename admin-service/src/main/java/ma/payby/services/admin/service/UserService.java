@@ -5,11 +5,8 @@ import ma.payby.common.exception.BusinessException;
 import ma.payby.common.jpa.model.User;
 import ma.payby.common.jpa.repository.UserRepository;
 import ma.payby.common.service.mapper.UserMapper;
-import ma.payby.common.service.utils.CommonServiceUtils;
 import ma.payby.common.utils.CommonUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -37,7 +34,6 @@ public class UserService {
     }
 
     public UserDTO addUser(UserDTO userDTO){
-        userDTO.setPassword(CommonServiceUtils.PASSWORD_ENCODER.encode(userDTO.getPassword()));
         User savedUser = userRepository.save(UserMapper.toUser(userDTO));
         return UserMapper.toUserDTO(savedUser);
     }

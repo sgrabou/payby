@@ -1,5 +1,4 @@
 ma\payby\common\service\mapper\PaiementMapper.class
-ma\payby\common\service\utils\CommonServiceUtils.class
 ma\payby\common\service\mapper\OrderMapper.class
 ma\payby\common\service\mapper\MerchandMapper.class
 ma\payby\common\service\exception\BusinessException.class

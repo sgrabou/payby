@@ -37,7 +37,7 @@ public class User {
 
 	private String name;
 
-	private @JsonIgnore String password;
+	private String password;
 
 	private String[] roles;
 
