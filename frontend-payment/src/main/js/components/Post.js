@@ -1,28 +1,36 @@
 import React, { Component, Fragment } from 'react';
 
 import {Alert, Badge, NavbarBrand, Table} from 'reactstrap';
-import logo from "../img/logo.png";
-import sopay_logo from "../img/sopay_logo.png";
+import PropTypes from 'prop-types';
 
 class Post extends Component {
-
+  static get propTypes() {
+    return {
+      reference: PropTypes.string,
+      merchandUrlWebsite:PropTypes.string,
+      merchandLogo:PropTypes.string,
+      merchandOrderID:PropTypes.string,
+      orderDetails:PropTypes.string,
+      amount:PropTypes.string,
+      customerLastName:PropTypes.string,
+      customerFirstName:PropTypes.string,
+      customerAddress:PropTypes.string,
+      customerPhoneNumber:PropTypes.string,
+      customerEmail:PropTypes.string
+    };
+  }
     constructor(props) {
-        super(props);
-        this.state = { reference: this.props.reference, merchandOrderID: this.props.merchandOrderID,amount: this.props.amount, orderDetails: this.props.orderDetails,
-            merchandUrlWebsite: this.props.merchandUrlWebsite,customerFirstName: this.props.customerFirstName, customerLastName: this.props.customerLastName,
-            customerAddress: this.props.customerAddress, customerMobileNumber: this.props.customerMobileNumber,customerEmail: this.props.customerEmail,
-            merchandLogo: this.props.merchandLogo }
-
+      super(props);
     }
 
   render() {
     return (
       <Fragment>
-        { this.state.amount && <div className="position-relative">
+        <div className="position-relative">
           <Alert color="secondary">
             <div className="container">
-              <strong>{this.state.merchandUrlWebsite}</strong>
-              <img src={this.state.merchandLogo} alt="logo" className="float-right" height="24"/>
+              <strong>{this.props.merchandUrlWebsite}</strong>
+              <img src={this.props.merchandLogo} alt="logo" className="float-right" height="24"/>
 
             </div>
           </Alert>
@@ -31,15 +39,15 @@ class Post extends Component {
               <tbody>
               <tr>
                 <th>N° de Commande</th>
-                <td>{this.state.merchandOrderID}</td>
+                <td>{this.props.merchandOrderID}</td>
               </tr>
               <tr>
                 <th>Détails</th>
-                <td>{this.state.orderDetails}</td>
+                <td>{this.props.orderDetails}</td>
               </tr>
               <tr>
                 <th>Montant</th>
-                <td>{this.state.amount+" DH"}</td>
+                <td>{this.props.amount+" DH"}</td>
               </tr>
               </tbody>
             </Table>
@@ -50,24 +58,24 @@ class Post extends Component {
               <tbody>
               <tr>
                 <th>Nom et prénom</th>
-                <td>{this.state.customerLastName+" "+this.state.customerFirstName}</td>
+                <td>{this.props.customerLastName+" "+this.props.customerFirstName}</td>
               </tr>
               <tr>
                 <th>Adresse</th>
-                <td>222,Boulesdsd sdsdsd Casablanca</td>
+                <td>{this.props.customerAddress}</td>
               </tr>
               <tr>
                 <th>Téléphone</th>
-                <td>0653343434</td>
+                <td>{this.props.customerPhoneNumber}</td>
               </tr>
               <tr>
                 <th>E-mail</th>
-                <td>Larry@ssd.com</td>
+                <td>{this.props.customerEmail}</td>
               </tr>
               </tbody>
             </Table>
           </article>
-        </div> }
+        </div>
       </Fragment>
     );
   }
