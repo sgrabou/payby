@@ -28,7 +28,7 @@ public class WalletController {
 
 	@PostMapping("/api/v1/order/confirm")
 	public ResponseEntity<PaiementDTO>  confirmPayment(@RequestBody ConfirmPaymentWalletRequestDTO confirmPaymentWalletRequestDTO) throws BusinessException {
-		LOGGER.info("Confirm Payment orderReference: reference = {}", confirmPaymentWalletRequestDTO.getRefernece());
+		LOGGER.info("Confirm Payment orderReference: reference = {}", confirmPaymentWalletRequestDTO.getReference());
 		return new ResponseEntity<>(walletOrderService.confirmPayment(confirmPaymentWalletRequestDTO),HttpStatus.OK);
 	}
 

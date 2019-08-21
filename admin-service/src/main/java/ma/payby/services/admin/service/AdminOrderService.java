@@ -35,8 +35,8 @@ public class AdminOrderService {
     }
 
     public List<OrderDTO> getAllOrder() throws BusinessException {
-        List<Order> merchands = orderRepository.findAll();
-        List<OrderDTO> orderDTOList = merchands.stream()
+        List<Order> merchants = orderRepository.findAll();
+        List<OrderDTO> orderDTOList = merchants.stream()
                 .map(e ->OrderMapper.toOrderDTO(e)).collect(Collectors.toList());
         return orderDTOList;
     }

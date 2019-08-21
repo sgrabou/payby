@@ -1,9 +1,9 @@
 ma\payby\common\jpa\model\Paiement.class
 ma\payby\common\jpa\model\Wallet.class
 ma\payby\common\jpa\model\Order.class
+ma\payby\common\jpa\repository\MerchantRepository.class
 ma\payby\common\jpa\repository\OrderRepository.class
-ma\payby\common\jpa\repository\MerchandRepository.class
-ma\payby\common\jpa\model\Merchand.class
+ma\payby\common\jpa\model\Merchant.class
 ma\payby\common\jpa\model\User.class
 ma\payby\common\jpa\repository\UserRepository.class
 ma\payby\common\jpa\model\Customer.class

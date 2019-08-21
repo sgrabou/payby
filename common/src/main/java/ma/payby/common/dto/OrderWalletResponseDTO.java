@@ -5,27 +5,27 @@ import ma.payby.common.enums.OrderStatus;
 import java.math.BigDecimal;
 
 public class OrderWalletResponseDTO {
-    private String merchandNumber;
-    private String merchandName;
+    private String merchantNumber;
+    private String merchantName;
     private String websiteUrl;
     private OrderStatus orderStatus;
     private BigDecimal amount;
     private String orderDetails;
 
-      public String getMerchandNumber() {
-        return merchandNumber;
+      public String getMerchantNumber() {
+        return merchantNumber;
     }
 
-    public void setMerchandNumber(String merchandNumber) {
-        this.merchandNumber = merchandNumber;
+    public void setMerchantNumber(String merchantNumber) {
+        this.merchantNumber = merchantNumber;
     }
 
-    public String getMerchandName() {
-        return merchandName;
+    public String getMerchantName() {
+        return merchantName;
     }
 
-    public void setMerchandName(String merchandName) {
-        this.merchandName = merchandName;
+    public void setMerchantName(String merchantName) {
+        this.merchantName = merchantName;
     }
 
     public String getWebsiteUrl() {

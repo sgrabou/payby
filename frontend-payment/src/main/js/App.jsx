@@ -15,18 +15,19 @@ class App extends Component {
 	}
 	constructor(props) {
 		super(props);
-		this.state = {reference: props.reference, merchandOrderID: null,amount: null, orderDetails: null,
-			merchandUrlWebsite: null,customerFirstName: null,customerLastName: null,customerAddress: null,
-			customerPhoneNumber: null,customerEmail: null,logo: null,walletName:null, walletLogo:null, orderStatus:null };
+		this.state = {reference: props.reference, merchantOrderID: null,amount: null, orderDetails: null,
+			merchantUrlWebsite: null,customerFirstName: null,customerLastName: null,customerAddress: null,
+			customerPhoneNumber: null,customerEmail: null,logo: null,walletName:null, walletLogo:null, orderStatus:null,retourUrl:null };
 	}
 	componentDidMount() {
-		axios.get('http://localhost:8060/merchand/api/v1/order/reference/'+this.state.reference)
+		axios.get('http://localhost:8060/merchant/api/v1/order/reference/'+this.state.reference)
 			.then(response => this.setState({
-				merchandOrderID: response.data.merchandOrderID, amount: response.data.displayedAmount, orderDetails: response.data.orderDetails,
-				merchandUrlWebsite: response.data.merchand.urlWebsite,merchandLogo: response.data.merchand.logo,customerFirstName: response.data.customer.firstName,
+				merchantOrderID: response.data.merchantOrderID, amount: response.data.displayedAmount, orderDetails: response.data.orderDetails,
+				merchantUrlWebsite: response.data.merchant.urlWebsite,merchantLogo: response.data.merchant.logo,customerFirstName: response.data.customer.firstName,
 				customerLastName: response.data.customer.lastName,customerAddress: response.data.customer.address,
 				customerPhoneNumber: response.data.customer.phoneNumber,customerEmail: response.data.customer.email,
-				walletName: response.data.merchand.wallet.walletName, walletLogo:response.data.merchand.wallet.logo,orderStatus: response.data.orderStatus
+				walletName: response.data.merchant.wallet.walletName, walletLogo:response.data.merchant.wallet.logo,
+				orderStatus: response.data.orderStatus,retourUrl:response.data.merchant.merchantResponseURL
 			}));
 	}
 
@@ -42,15 +43,16 @@ class App extends Component {
 																walletName={this.state.walletName}
 																walletLogo={this.state.walletLogo}
 																orderStatus={this.state.orderStatus}
+																retourUrl={this.state.retourUrl+"&REFERENCE_ID="+this.state.reference+"&ORDER_ID="+this.state.merchantOrderID}
 								/>
 							</Col>
 							<Col xs={{ order: 1 }} md={{ size: 6, offset: 1 }} tag="section" className="py-5 mb-5 py-md-0 mb-md-0">
 								<Post reference={this.state.reference}
-											merchandOrderID={this.state.merchandOrderID}
+											merchantOrderID={this.state.merchantOrderID}
 											amount={this.state.amount}
 											orderDetails={this.state.orderDetails}
-											merchandUrlWebsite={this.state.merchandUrlWebsite}
-											merchandLogo={this.state.merchandLogo}
+											merchantUrlWebsite={this.state.merchantUrlWebsite}
+											merchantLogo={this.state.merchantLogo}
 											customerFirstName={this.state.customerFirstName}
 											customerLastName={this.state.customerLastName}
 											customerAddress={this.state.customerAddress}

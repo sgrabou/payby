@@ -5,37 +5,75 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f1777bb-9131-42fe-9d4e-304ac96c6fd3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/ma/payby/common/utils/SignatureUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend-payment/entry.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend-payment/src/main/js/components/PendingPayment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-service/src/main/java/ma/payby/services/admin/controller/AdminMerchantController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-service/src/main/java/ma/payby/services/admin/service/AdminMerchantService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-model-jpa/src/main/java/ma/payby/common/jpa/repository/MerchantRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-service/src/main/java/ma/payby/common/service/mapper/MerchantMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-model-jpa/src/main/java/ma/payby/common/jpa/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-model-jpa/src/main/java/ma/payby/common/jpa/model/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-model-jpa/src/main/java/ma/payby/common/jpa/model/Merchand.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-model-jpa/src/main/java/ma/payby/common/jpa/model/Merchand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-model-jpa/src/main/java/ma/payby/common/jpa/model/Wallet.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-model-jpa/src/main/java/ma/payby/common/jpa/model/Wallet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-model-jpa/target/classes/ma/payby/common/jpa/model/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/common-model-jpa/target/classes/ma/payby/common/jpa/model/Customer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-model-jpa/target/classes/ma/payby/common/jpa/model/Merchand.class" beforeDir="false" afterPath="$PROJECT_DIR$/common-model-jpa/target/classes/ma/payby/common/jpa/model/Merchand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-service/src/main/java/ma/payby/services/admin/AdminApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-service/src/main/java/ma/payby/services/admin/AdminApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-service/src/main/java/ma/payby/services/admin/client/AdminMerchandClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-service/src/main/java/ma/payby/services/admin/client/AdminMerchantClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-service/src/main/java/ma/payby/services/admin/controller/AdminMerchandController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-service/src/main/java/ma/payby/services/admin/service/AdminMerchandService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-service/src/main/java/ma/payby/services/admin/service/AdminOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-service/src/main/java/ma/payby/services/admin/service/AdminOrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin-service/src/main/java/ma/payby/services/admin/service/AdminWalletOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin-service/src/main/java/ma/payby/services/admin/service/AdminWalletOrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-model-jpa/src/main/java/ma/payby/common/jpa/model/Merchand.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-model-jpa/src/main/java/ma/payby/common/jpa/model/Merchant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-model-jpa/src/main/java/ma/payby/common/jpa/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-model-jpa/src/main/java/ma/payby/common/jpa/model/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-model-jpa/src/main/java/ma/payby/common/jpa/repository/MerchandRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-model-jpa/target/classes/ma/payby/common/jpa/model/Merchand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-model-jpa/target/classes/ma/payby/common/jpa/model/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/common-model-jpa/target/classes/ma/payby/common/jpa/model/Order.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-model-jpa/target/classes/ma/payby/common/jpa/model/Wallet.class" beforeDir="false" afterPath="$PROJECT_DIR$/common-model-jpa/target/classes/ma/payby/common/jpa/model/Wallet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-model-jpa/target/classes/ma/payby/common/jpa/repository/MerchandRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-model-jpa/target/common-model-jpa-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/common-model-jpa/target/common-model-jpa-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-model-jpa/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/common-model-jpa/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-model-jpa/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/common-model-jpa/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-service/src/main/java/ma/payby/common/service/mapper/MerchandMapper.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/common-service/src/main/java/ma/payby/common/service/mapper/OrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-service/src/main/java/ma/payby/common/service/mapper/OrderMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-service/target/classes/ma/payby/common/service/mapper/MerchandMapper.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/common-service/target/classes/ma/payby/common/service/mapper/OrderMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/common-service/target/classes/ma/payby/common/service/mapper/OrderMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/ma/payby/common/dto/ConfirmPaymentMerchandRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/ma/payby/common/dto/ConfirmPaymentMerchandRequestDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/ma/payby/common/dto/CustomerDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/ma/payby/common/dto/CustomerDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/ma/payby/common/dto/MerchandDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/ma/payby/common/dto/MerchandDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/ma/payby/common/dto/WalletDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/ma/payby/common/dto/WalletDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/ma/payby/common/enums/OrderStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/ma/payby/common/enums/OrderStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-service/target/common-service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/common-service/target/common-service-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/common-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/common-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/ma/payby/common/dto/ConfirmPaymentMerchandRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/ma/payby/common/dto/ConfirmPaymentMerchantRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/ma/payby/common/dto/ConfirmPaymentWalletRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/ma/payby/common/dto/ConfirmPaymentWalletRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/ma/payby/common/dto/InitierPaymentMerchandRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/ma/payby/common/dto/InitierPaymentMerchantRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/ma/payby/common/dto/InitierPaymentMerchandResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/ma/payby/common/dto/InitierPaymentMerchantResponseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/ma/payby/common/dto/MerchandDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/ma/payby/common/dto/MerchantDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/ma/payby/common/dto/OrderDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/ma/payby/common/dto/OrderDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/ma/payby/common/dto/OrderWalletResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/ma/payby/common/dto/OrderWalletResponseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/ma/payby/common/enums/MerchandStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/ma/payby/common/enums/MerchantStatus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/src/main/java/ma/payby/common/utils/CommonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/ma/payby/common/utils/CommonUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/ma/payby/common/dto/CustomerDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/ma/payby/common/dto/CustomerDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/ma/payby/common/dto/MerchandDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/ma/payby/common/dto/MerchandDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/ma/payby/common/enums/OrderStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/ma/payby/common/enums/OrderStatus.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/ma/payby/common/dto/ConfirmPaymentMerchandRequestDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/ma/payby/common/dto/ConfirmPaymentWalletRequestDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/ma/payby/common/dto/ConfirmPaymentWalletRequestDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/ma/payby/common/dto/InitierPaymentMerchandRequestDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/ma/payby/common/dto/InitierPaymentMerchandResponseDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/ma/payby/common/dto/MerchandDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/ma/payby/common/dto/OrderDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/ma/payby/common/dto/OrderDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/ma/payby/common/dto/OrderWalletResponseDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/ma/payby/common/dto/OrderWalletResponseDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/ma/payby/common/dto/WalletDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/ma/payby/common/dto/WalletDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/ma/payby/common/enums/MerchandStatus.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/common/target/classes/ma/payby/common/utils/CommonUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/ma/payby/common/utils/CommonUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/common-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/common-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-service/src/main/resources/config/marchand-service-instance2.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/src/main/resources/config/marchant-service-instance2.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-service/src/main/resources/config/merchand-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/src/main/resources/config/merchant-service.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config-service/src/main/resources/config/proxy-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-service/src/main/resources/config/proxy-service.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend-backoffice/frontend-backoffice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend-backoffice/frontend-backoffice.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend-payment/src/main/js/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend-payment/src/main/js/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend-payment/src/main/js/components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend-payment/src/main/js/components/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend-payment/src/main/js/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend-payment/src/main/js/components/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend-payment/src/main/js/components/SideCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend-payment/src/main/js/components/PaymentSuccess.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/merchand-service/src/main/java/ma/payby/services/merchand/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/merchand-service/src/main/java/ma/payby/services/merchand/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-payment/src/main/js/components/PendingPayment.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend-payment/src/main/js/components/PendingPayment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-payment/src/main/js/components/Post.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend-payment/src/main/js/components/Post.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/merchand-service/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/merchant-service/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/merchand-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/merchant-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/merchand-service/src/main/java/ma/payby/services/merchand/MerchandApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/merchant-service/src/main/java/ma/payby/services/merchant/MerchantApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/merchand-service/src/main/java/ma/payby/services/merchand/controller/MerchandController.java" beforeDir="false" afterPath="$PROJECT_DIR$/merchant-service/src/main/java/ma/payby/services/merchant/controller/MerchantController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/merchand-service/src/main/java/ma/payby/services/merchand/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/merchant-service/src/main/java/ma/payby/services/merchant/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/merchand-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/merchant-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/payby.sql" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/payby.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wallet-service/src/main/java/ma/payby/services/wallet/client/MerchandClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/wallet-service/src/main/java/ma/payby/services/wallet/client/MerchantClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wallet-service/src/main/java/ma/payby/services/wallet/controller/WalletController.java" beforeDir="false" afterPath="$PROJECT_DIR$/wallet-service/src/main/java/ma/payby/services/wallet/controller/WalletController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wallet-service/src/main/java/ma/payby/services/wallet/service/WalletOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/wallet-service/src/main/java/ma/payby/services/wallet/service/WalletOrderService.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/merchand-service/target/" />
@@ -62,135 +100,98 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/wallet-service/src/main/java/ma/payby/services/wallet/service/WalletOrderService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="84" column="62" selection-start-line="84" selection-start-column="62" selection-end-line="84" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/src/main/java/ma/payby/common/dto/ConfirmPaymentWalletRequestDTO.java">
+        <entry file="file://$PROJECT_DIR$/common/src/main/java/ma/payby/common/enums/MerchantStatus.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="72">
-              <caret line="6" column="45" lean-forward="true" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+              <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common-model-jpa/src/main/java/ma/payby/common/jpa/model/Wallet.java">
+        <entry file="file://$PROJECT_DIR$/common-model-jpa/src/main/java/ma/payby/common/jpa/repository/MerchantRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="12" selection-start-line="12" selection-end-line="20" selection-end-column="24" />
-              <folding>
-                <element signature="e#1885#1886#0" expanded="true" />
-                <element signature="e#1912#1913#0" expanded="true" />
-                <element signature="e#1952#1953#0" expanded="true" />
-                <element signature="e#1984#1985#0" expanded="true" />
-                <element signature="e#2050#2051#0" expanded="true" />
-                <element signature="e#2082#2083#0" expanded="true" />
-                <element signature="e#2132#2133#0" expanded="true" />
-                <element signature="e#2174#2175#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/src/main/java/ma/payby/common/dto/WalletDTO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="13" column="28" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="28" />
-              <folding>
-                <element signature="e#441#442#0" expanded="true" />
-                <element signature="e#472#473#0" expanded="true" />
-                <element signature="e#518#519#0" expanded="true" />
-                <element signature="e#558#559#0" expanded="true" />
-                <element signature="e#595#596#0" expanded="true" />
-                <element signature="e#628#629#0" expanded="true" />
-                <element signature="e#680#681#0" expanded="true" />
-                <element signature="e#724#725#0" expanded="true" />
-                <element signature="e#768#769#0" expanded="true" />
-                <element signature="e#808#809#0" expanded="true" />
-                <element signature="e#874#875#0" expanded="true" />
-                <element signature="e#932#933#0" expanded="true" />
-                <element signature="e#970#971#0" expanded="true" />
-                <element signature="e#1004#1005#0" expanded="true" />
-                <element signature="e#1058#1059#0" expanded="true" />
-                <element signature="e#1104#1105#0" expanded="true" />
-                <element signature="e#1137#1138#0" expanded="true" />
-                <element signature="e#1166#1167#0" expanded="true" />
-                <element signature="e#1210#1211#0" expanded="true" />
-                <element signature="e#1246#1247#0" expanded="true" />
-                <element signature="e#1291#1292#0" expanded="true" />
-                <element signature="e#1326#1327#0" expanded="true" />
-                <element signature="e#1388#1389#0" expanded="true" />
-                <element signature="e#1436#1437#0" expanded="true" />
-                <element signature="e#1473#1474#0" expanded="true" />
-                <element signature="e#1506#1507#0" expanded="true" />
-                <element signature="e#1558#1559#0" expanded="true" />
-                <element signature="e#1602#1603#0" expanded="true" />
-                <element signature="e#1638#1639#0" expanded="true" />
-                <element signature="e#1670#1671#0" expanded="true" />
-                <element signature="e#1720#1721#0" expanded="true" />
-                <element signature="e#1762#1763#0" expanded="true" />
-                <element signature="e#1798#1799#0" expanded="true" />
-                <element signature="e#1830#1831#0" expanded="true" />
-                <element signature="e#1880#1881#0" expanded="true" />
-                <element signature="e#1922#1923#0" expanded="true" />
-                <element signature="e#1953#1954#0" expanded="true" />
-                <element signature="e#1980#1981#0" expanded="true" />
-                <element signature="e#2020#2021#0" expanded="true" />
-                <element signature="e#2052#2053#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/merchand-service/src/main/java/ma/payby/services/merchand/service/OrderService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="41" selection-start-line="39" selection-end-line="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common-service/src/main/java/ma/payby/common/service/mapper/MerchandMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
+            <state relative-caret-position="108">
               <caret line="10" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.6.RELEASE/spring-web-5.1.6.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
+        <entry file="file://$PROJECT_DIR$/common-model-jpa/src/main/java/ma/payby/common/jpa/model/Merchant.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="204" selection-start-line="204" selection-end-line="204" />
+            <state relative-caret-position="108">
+              <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+              <folding>
+                <element signature="e#3416#3417#0" expanded="true" />
+                <element signature="e#3448#3449#0" expanded="true" />
+                <element signature="e#3498#3499#0" expanded="true" />
+                <element signature="e#3540#3541#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/src/main/java/ma/payby/common/utils/CommonUtils.java">
+        <entry file="file://$PROJECT_DIR$/common-service/src/main/java/ma/payby/common/service/mapper/MerchantMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wallet-service/src/main/java/ma/payby/services/wallet/client/MerchantClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin-service/src/main/java/ma/payby/services/admin/service/AdminMerchantService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin-service/src/main/java/ma/payby/services/admin/controller/AdminMerchantController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/merchant-service/src/main/java/ma/payby/services/merchant/MerchantApplication.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="252">
-              <caret line="16" column="34" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="34" />
+              <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/src/main/java/ma/payby/common/dto/InitierPaymentMerchandRequestDTO.java">
+        <entry file="file://$PROJECT_DIR$/config-service/src/main/resources/config/merchant-service.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="9" column="26" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="26" />
+            <state relative-caret-position="65">
+              <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/merchant-service/src/main/resources/bootstrap.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="2" column="25" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -207,10 +208,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ddl-</find>
-      <find>mysql-connector-java</find>
-      <find>mysql</find>
-      <find>Hikari</find>
       <find>loggedInManager</find>
       <find>HttpEntity</find>
       <find>manag</find>
@@ -227,7 +224,6 @@
       <find>App</find>
       <find>&lt;srong&gt;</find>
       <find>console.lo</find>
-      <find>merchand</find>
       <find>customer</find>
       <find>if(</find>
       <find>this.state</find>
@@ -237,11 +233,18 @@
       <find>*10</find>
       <find>paiement.getOrder().getCustomer()</find>
       <find>toConfirmPaymentMerchandRequestDTO</find>
+      <find>refernece</find>
+      <find>marchad</find>
+      <find>marchand</find>
+      <find>merchand</find>
+      <find>Merchand</find>
     </findStrings>
     <replaceStrings>
       <replace>wallet</replace>
       <replace>this.props</replace>
       <replace>initierPaymentMerchandRequestDTO</replace>
+      <replace>merchant</replace>
+      <replace>Merchant</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\Users\samir\Documents\workspace\payby07082019\payby\frontend-backoffice</dir>
@@ -260,7 +263,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/frontend-backoffice/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/frontend-backoffice/src/main/java/ma/payby/frontend/backoffice/controller/UserController.java" />
         <option value="$PROJECT_DIR$/frontend-backoffice/src/main/java/ma/payby/frontend/backoffice/client/UserClient.java" />
         <option value="$PROJECT_DIR$/common-model-jpa/src/main/java/ma/payby/common/jpa/model/User.java" />
@@ -292,8 +294,6 @@
         <option value="$PROJECT_DIR$/frontend-payment/webpack.config.js" />
         <option value="$PROJECT_DIR$/frontend-payment/src/main/js/components/SideCard.js" />
         <option value="$PROJECT_DIR$/frontend-payment/src/main/js/components/PaymentSuccess.js" />
-        <option value="$PROJECT_DIR$/frontend-payment/src/main/js/App.jsx" />
-        <option value="$PROJECT_DIR$/frontend-payment/src/main/js/components/PendingPayment.js" />
         <option value="$PROJECT_DIR$/wallet-service/pom.xml" />
         <option value="$PROJECT_DIR$/common/src/main/java/ma/payby/common/enums/OrderStatus.java" />
         <option value="$PROJECT_DIR$/config-service/src/main/resources/config/proxy-service.yml" />
@@ -305,12 +305,15 @@
         <option value="$PROJECT_DIR$/common/src/main/java/ma/payby/common/dto/CustomerDTO.java" />
         <option value="$PROJECT_DIR$/common-model-jpa/src/main/java/ma/payby/common/jpa/model/Customer.java" />
         <option value="$PROJECT_DIR$/plugins/prestashop/1.6/Payby/package_PayBy/pbw_Function.php" />
-        <option value="$PROJECT_DIR$/common/src/main/java/ma/payby/common/dto/ConfirmPaymentMerchandRequestDTO.java" />
         <option value="$PROJECT_DIR$/common/src/main/java/ma/payby/common/utils/CommonUtils.java" />
         <option value="$PROJECT_DIR$/merchand-service/src/main/java/ma/payby/services/merchand/service/OrderService.java" />
         <option value="$PROJECT_DIR$/common-model-jpa/src/main/java/ma/payby/common/jpa/model/Wallet.java" />
         <option value="$PROJECT_DIR$/common/src/main/java/ma/payby/common/dto/WalletDTO.java" />
         <option value="$PROJECT_DIR$/wallet-service/src/main/java/ma/payby/services/wallet/service/WalletOrderService.java" />
+        <option value="$PROJECT_DIR$/frontend-payment/src/main/js/App.jsx" />
+        <option value="$PROJECT_DIR$/frontend-payment/src/main/js/components/PendingPayment.js" />
+        <option value="$PROJECT_DIR$/common/src/main/java/ma/payby/common/dto/ConfirmPaymentMerchandRequestDTO.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/ma/payby/common/dto/ConfirmPaymentWalletRequestDTO.java" />
       </list>
     </option>
   </component>
@@ -344,8 +347,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -423,15 +426,28 @@
         </RuleState>
       </list>
     </option>
-    <option name="contentProportion" value="0.28356713" />
+    <option name="contentProportion" value="0.17078826" />
   </component>
-  <component name="RunManager" selected="Spring Boot.WalletApplication">
+  <component name="RunManager" selected="Multirun.run all apps">
     <configuration name="CommonServiceUtilsTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ma.payby.frontend.backoffice.utils.CommonServiceUtilsTest" />
       <module name="frontend-backoffice" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ma.payby.frontend.backoffice.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MerchantApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ma.payby.services.merchant.MerchantApplication" />
+      <module name="merchant-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ma.payby.services.merchant.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -517,7 +533,7 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
-    <configuration name="services [clean,install,-U]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+    <configuration name="services [clean,install]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
         <option name="myRunnerSettings" />
@@ -530,7 +546,6 @@
               <list>
                 <option value="clean" />
                 <option value="install" />
-                <option value="-U" />
               </list>
             </option>
             <option name="pomFileName" />
@@ -560,9 +575,9 @@
       <runConfiguration name="ProxyApplication" type="Spring Boot" />
       <runConfiguration name="WalletApplication" type="Spring Boot" />
       <runConfiguration name="AdminApplication" type="Spring Boot" />
-      <runConfiguration name="MerchandApplication" type="Spring Boot" />
       <runConfiguration name="BackOfficeApplication (1)" type="Spring Boot" />
       <runConfiguration name="PaymentFrontendApplication" type="Spring Boot" />
+      <runConfiguration name="MerchantApplication" type="Application" />
       <method v="2" />
     </configuration>
     <configuration name="AdminApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -601,19 +616,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GatewayApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="gateway-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ma.payby.services.gateway.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="ma.payby.services.gateway.GatewayApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="gateway-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="pl.piomin.services.gateway.GatewayApplication" />
@@ -621,9 +623,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MerchandApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="merchand-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="ma.payby.services.merchand.MerchandApplication" />
+    <configuration name="MerchandApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="merchant-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ma.payby.services.merchant.MerchandApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -666,7 +668,8 @@
       <item itemvalue="Application.CommonServiceUtilsTest" />
       <item itemvalue="Application.WalletApplication" />
       <item itemvalue="Application.Tester" />
-      <item itemvalue="Maven.services [clean,install,-U]" />
+      <item itemvalue="Application.MerchantApplication" />
+      <item itemvalue="Maven.services [clean,install]" />
       <item itemvalue="Maven.dependency tree [clean,install]" />
       <item itemvalue="Maven.npm install" />
       <item itemvalue="Multirun.run all apps" />
@@ -674,22 +677,21 @@
       <item itemvalue="Spring Boot.BackOfficeApplication" />
       <item itemvalue="Spring Boot.ConfigApplication" />
       <item itemvalue="Spring Boot.DiscoveryApplication" />
-      <item itemvalue="Spring Boot.MerchandApplication" />
       <item itemvalue="Spring Boot.ProxyApplication" />
       <item itemvalue="Spring Boot.WalletApplication" />
       <item itemvalue="Spring Boot.ReactAndSpringDataRestApplication" />
       <item itemvalue="Spring Boot.BackOfficeApplication (1)" />
       <item itemvalue="Spring Boot.GatewayApplication" />
-      <item itemvalue="Spring Boot.GatewayApplication (1)" />
       <item itemvalue="Spring Boot.PaymentFrontendApplication" />
+      <item itemvalue="Spring Boot.MerchandApplication (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MerchantApplication" />
         <item itemvalue="Spring Boot.PaymentFrontendApplication" />
         <item itemvalue="Application.Tester" />
         <item itemvalue="Application.WalletApplication" />
         <item itemvalue="Application.CommonServiceUtilsTest" />
-        <item itemvalue="Spring Boot.GatewayApplication (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -707,7 +709,8 @@
       <workItem from="1565628643474" duration="4102000" />
       <workItem from="1565708659119" duration="1048000" />
       <workItem from="1565870629254" duration="51358000" />
-      <workItem from="1566340622657" duration="15639000" />
+      <workItem from="1566340622657" duration="17664000" />
+      <workItem from="1566404693720" duration="8210000" />
     </task>
     <task id="LOCAL-00001" summary="frontendBackoffice">
       <created>1565184954254</created>
@@ -758,25 +761,31 @@
       <option name="project" value="LOCAL" />
       <updated>1566348663522</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="commit">
+      <created>1566357047203</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1566357047203</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123744000" />
+    <option name="totallyTimeSpent" value="133979000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Web" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.20499243" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.25340393" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Favorites" order="7" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Run Dashboard" order="0" sideWeight="0.7753404" visible="true" weight="0.22385621" />
+      <window_info anchor="bottom" id="Run Dashboard" order="0" sideWeight="0.7753404" weight="0.4379085" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="2" sideWeight="0.49848714" weight="0.2908497" />
       <window_info anchor="bottom" id="Java Enterprise" order="3" />
@@ -784,7 +793,7 @@
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Spring" order="6" />
       <window_info anchor="bottom" id="Find" order="7" sideWeight="0.49924356" weight="0.32843137" />
-      <window_info anchor="bottom" id="Run" order="8" sideWeight="0.49926794" weight="0.374183" />
+      <window_info anchor="bottom" id="Run" order="8" sideWeight="0.49926794" visible="true" weight="0.374183" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.39905363" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
@@ -926,188 +935,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/frontend-payment/src/main/java/ma/payby/frontend/payment/controller/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="30" column="57" selection-start-line="30" selection-start-column="57" selection-end-line="30" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend-payment/src/main/js/components/Footer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend-payment/src/main/resources/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/ma/payby/common/dto/OrderDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="80" selection-start-line="80" selection-end-line="80" />
-          <folding>
-            <element signature="e#2104#2105#0" expanded="true" />
-            <element signature="e#2164#2165#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend-payment/src/main/resources/static/media/merchand/logo_paracasa.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common-model-jpa/src/main/java/ma/payby/common/jpa/model/Order.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="19" selection-start-line="19" selection-end-line="21" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin-service/src/main/java/ma/payby/services/admin/AdminApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common-service/src/main/java/ma/payby/common/service/mapper/WalletMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/prestashop/Payby/log/SendData_2019-05-27.log" />
-    <entry file="file://$PROJECT_DIR$/scripts/payby.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend-payment/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="23" column="15" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend-payment/.eslintrc.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend-payment/src/main/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/ma/payby/common/utils/NumberUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="10" column="59" lean-forward="true" selection-start-line="10" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend-payment/src/main/js/components/Header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend-payment/entry.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend-payment/src/main/js/App.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="28" column="146" selection-start-line="28" selection-start-column="146" selection-end-line="28" selection-end-column="146" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend-backoffice/src/main/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1674">
-          <caret line="93" column="4" selection-start-line="93" selection-start-column="4" selection-end-line="93" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend-payment/src/main/js/components/Post.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="6" selection-start-line="6" selection-end-line="20" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend-payment/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend-payment/src/main/js/components/PendingPayment.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config-service/src/main/resources/config/discovery-service.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend-payment/src/main/js/components/PaymentSuccess.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1170">
-          <caret line="73" column="5" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wallet-service/src/main/java/ma/payby/services/wallet/client/MerchandClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="9" column="59" selection-start-line="9" selection-start-column="59" selection-end-line="9" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proxy-service/src/main/java/ma/payby/service/proxy/ProxyApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wallet-service/src/main/java/ma/payby/services/wallet/controller/WalletController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wallet-service/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
@@ -1122,49 +949,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config-service/src/main/resources/config/proxy-service.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="310">
           <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common-model-jpa/src/main/java/ma/payby/common/jpa/model/Merchand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="154" column="34" selection-start-line="154" selection-start-column="34" selection-end-line="154" selection-end-column="34" />
-          <folding>
-            <element signature="e#3241#3242#0" expanded="true" />
-            <element signature="e#3270#3271#0" expanded="true" />
-            <element signature="e#3314#3315#0" expanded="true" />
-            <element signature="e#3350#3351#0" expanded="true" />
-            <element signature="e#3448#3449#0" expanded="true" />
-            <element signature="e#3498#3499#0" expanded="true" />
-            <element signature="e#3540#3541#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/ma/payby/common/dto/MerchandDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="143" column="34" selection-start-line="143" selection-start-column="34" selection-end-line="143" selection-end-column="34" />
-          <folding>
-            <element signature="e#2993#2994#0" expanded="true" />
-            <element signature="e#3022#3023#0" expanded="true" />
-            <element signature="e#3069#3070#0" expanded="true" />
-            <element signature="e#3105#3106#0" expanded="true" />
-            <element signature="e#3203#3204#0" expanded="true" />
-            <element signature="e#3253#3254#0" expanded="true" />
-            <element signature="e#3295#3296#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1182,16 +970,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/ma/payby/common/utils/SignatureUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="11" column="64" selection-start-line="11" selection-start-column="64" selection-end-line="12" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin-service/src/main/java/ma/payby/services/admin/service/AdminOrderService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
@@ -1206,20 +984,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/ma/payby/common/dto/CustomerDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-319">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common-model-jpa/src/main/java/ma/payby/common/jpa/model/Customer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/plugins/prestashop/1.6/Payby/package_PayBy/pbw_Function.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -1227,59 +991,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common-service/src/main/java/ma/payby/common/service/mapper/OrderMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="69" column="40" lean-forward="true" selection-start-line="69" selection-start-column="40" selection-end-line="69" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/ma/payby/common/dto/ConfirmPaymentMerchandRequestDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-65">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/ma/payby/common/dto/InitierPaymentMerchandRequestDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/ma/payby/common/utils/CommonUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="16" column="34" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.6.RELEASE/spring-web-5.1.6.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
+        <state relative-caret-position="136">
           <caret line="204" selection-start-line="204" selection-end-line="204" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common-service/src/main/java/ma/payby/common/service/mapper/MerchandMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/merchand-service/src/main/java/ma/payby/services/merchand/service/OrderService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="41" selection-start-line="39" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/ma/payby/common/dto/ConfirmPaymentWalletRequestDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="6" column="45" lean-forward="true" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -1349,10 +1064,313 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wallet-service/src/main/java/ma/payby/services/wallet/service/WalletOrderService.java">
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/ma/payby/common/utils/NumberUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="10" column="59" lean-forward="true" selection-start-line="10" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/ma/payby/common/dto/OrderDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="954">
+          <caret line="94" column="31" lean-forward="true" selection-start-line="94" selection-start-column="31" selection-end-line="94" selection-end-column="31" />
+          <folding>
+            <element signature="e#2104#2105#0" expanded="true" />
+            <element signature="e#2164#2165#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common-model-jpa/src/main/java/ma/payby/common/jpa/model/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/ma/payby/common/dto/CustomerDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config-service/src/main/resources/config/wallet-service.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" column="15" lean-forward="true" selection-start-line="18" selection-start-column="2" selection-end-line="25" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config-service/src/main/resources/config/discovery-service.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
-          <caret line="84" column="62" selection-start-line="84" selection-start-column="62" selection-end-line="84" selection-end-column="62" />
+          <caret line="1" column="12" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config-service/src/main/resources/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config-service/src/main/resources/config/marchant-service-instance2.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend-payment/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend-payment/src/main/resources/static/built/bundle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-28530">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend-payment/src/main/java/ma/payby/frontend/payment/controller/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="30" column="57" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend-payment/src/main/resources/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="24" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend-payment/src/main/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="20" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config-service/src/main/resources/config/proxy-service.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="19" column="33" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proxy-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="42" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proxy-service/src/main/java/ma/payby/service/proxy/ProxyApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common-service/src/main/java/ma/payby/common/service/mapper/OrderMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="54" column="43" lean-forward="true" selection-start-line="54" selection-start-column="43" selection-end-line="54" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/ma/payby/common/utils/CommonUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+          <folding>
+            <element signature="e#838#839#0" expanded="true" />
+            <element signature="e#889#890#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/ma/payby/common/dto/InitierPaymentMerchantRequestDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/ma/payby/common/utils/SignatureUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/merchant-service/src/main/java/ma/payby/services/merchant/service/OrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="101" column="41" selection-start-line="101" selection-start-column="41" selection-end-line="101" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend-payment/src/main/js/App.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="54" column="59" selection-start-line="54" selection-start-column="47" selection-end-line="54" selection-end-column="59" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend-payment/src/main/js/components/PendingPayment.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="53" column="24" selection-start-line="47" selection-start-column="22" selection-end-line="53" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config-service/src/main/resources/config/admin-service.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/merchant-service/src/main/java/ma/payby/services/merchant/controller/MerchantController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="33" column="51" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wallet-service/src/main/java/ma/payby/services/wallet/service/WalletOrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="38" column="53" selection-start-line="38" selection-start-column="53" selection-end-line="38" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/discovery-service/src/main/java/ma/payby/services/discovery/DiscoveryApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/ma/payby/common/dto/ConfirmPaymentMerchantRequestDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+          <folding>
+            <element signature="e#1668#1669#0" expanded="true" />
+            <element signature="e#1710#1711#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/ma/payby/common/dto/ConfirmPaymentWalletRequestDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-29">
+          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/ma/payby/common/dto/MerchantDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#3171#3172#0" expanded="true" />
+            <element signature="e#3203#3204#0" expanded="true" />
+            <element signature="e#3253#3254#0" expanded="true" />
+            <element signature="e#3295#3296#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/ma/payby/common/enums/MerchantStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common-model-jpa/src/main/java/ma/payby/common/jpa/repository/MerchantRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common-model-jpa/src/main/java/ma/payby/common/jpa/model/Merchant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+          <folding>
+            <element signature="e#3416#3417#0" expanded="true" />
+            <element signature="e#3448#3449#0" expanded="true" />
+            <element signature="e#3498#3499#0" expanded="true" />
+            <element signature="e#3540#3541#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common-service/src/main/java/ma/payby/common/service/mapper/MerchantMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wallet-service/src/main/java/ma/payby/services/wallet/client/MerchantClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin-service/src/main/java/ma/payby/services/admin/service/AdminMerchantService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin-service/src/main/java/ma/payby/services/admin/controller/AdminMerchantController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config-service/src/main/resources/config/merchant-service.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/merchant-service/src/main/resources/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="25" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/merchant-service/src/main/java/ma/payby/services/merchant/MerchantApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
         </state>
       </provider>
     </entry>

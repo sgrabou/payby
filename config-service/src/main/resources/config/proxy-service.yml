@@ -15,9 +15,9 @@ zuul:
     wallet:
       path: /wallet/**
       serviceId: wallet-service
-    merchand:
-      path: /merchand/**
-      serviceId: merchand-service
+    merchant:
+      path: /merchant/**
+      serviceId: merchant-service
     admin:
       path: /admin/**
       serviceId: admin-service

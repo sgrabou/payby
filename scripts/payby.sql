@@ -105,15 +105,15 @@ INSERT INTO `customer` (`id`, `address`, `code_postal`, `email`, `first_name`, `
 -- --------------------------------------------------------
 
 --
--- Structure de la table `merchand`
+-- Structure de la table `merchant`
 --
 
-DROP TABLE IF EXISTS `merchand`;
-CREATE TABLE IF NOT EXISTS `merchand` (
+DROP TABLE IF EXISTS `merchant`;
+CREATE TABLE IF NOT EXISTS `merchant` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `description` varchar(255) DEFAULT NULL,
   `email` varchar(255) DEFAULT NULL,
-  `merchand_responseurl` varchar(255) DEFAULT NULL,
+  `merchant_responseurl` varchar(255) DEFAULT NULL,
   `status` int(11) DEFAULT NULL,
   `mobile_number` varchar(255) DEFAULT NULL,
   `name` varchar(255) DEFAULT NULL,
@@ -132,11 +132,11 @@ CREATE TABLE IF NOT EXISTS `merchand` (
 ) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
 --
--- Déchargement des données de la table `merchand`
+-- Déchargement des données de la table `merchant`
 --
 
-INSERT INTO `merchand` (`id`, `description`, `email`, `merchand_responseurl`, `status`, `mobile_number`, `name`, `payby_redirectionurl`, `payby_version`, `private_key`, `public_key`, `url_website`, `user_name`, `logo`, `walletid`) VALUES
-(1, 'samirSite', 'ssdsd@sdsds.com', 'http://localhost/prestashop/index.php?fc=module&module=PayBy&controller=reponse', 0, '04545454545', 'samir', 'http://localhost:8034/payby/payment/', '1.0', 'sdsdsdsdsffsfsf', 'sfsfsfsf', 'http://localhost', 'marchandUsername', 'media/merchand/logo_paracasa.jpg', 1);
+INSERT INTO `merchant` (`id`, `description`, `email`, `merchant_responseurl`, `status`, `mobile_number`, `name`, `payby_redirectionurl`, `payby_version`, `private_key`, `public_key`, `url_website`, `user_name`, `logo`, `walletid`) VALUES
+(1, 'samirSite', 'ssdsd@sdsds.com', 'http://localhost/prestashop/index.php?fc=module&module=PayBy&controller=reponse', 0, '04545454545', 'samir', 'http://localhost:8034/payby/payment/', '1.0', 'sdsdsdsdsffsfsf', 'sfsfsfsf', 'http://localhost', 'marchandUsername', 'media/merchant/logo_paracasa.jpg', 1);
 
 -- --------------------------------------------------------
 
@@ -149,23 +149,23 @@ CREATE TABLE IF NOT EXISTS `paiement_order` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `amount` decimal(19,2) DEFAULT NULL,
   `creation_date` datetime DEFAULT NULL,
-  `merchand_orderid` varchar(255) DEFAULT NULL,
+  `merchant_orderid` varchar(255) DEFAULT NULL,
   `order_details` varchar(255) DEFAULT NULL,
   `order_status` int(11) DEFAULT NULL,
   `reference` varchar(255) DEFAULT NULL,
   `customerid` bigint(20) DEFAULT NULL,
-  `merchandid` bigint(20) DEFAULT NULL,
+  `merchantid` bigint(20) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `UK_iug6uug61w5fjg3k83ee65udw` (`reference`),
   KEY `FK2ytvysfvwd2ux2vosrj3fdhw0` (`customerid`),
-  KEY `FKrsl2idgc6vnov5ggwav708obi` (`merchandid`)
+  KEY `FKrsl2idgc6vnov5ggwav708obi` (`merchantid`)
 ) ENGINE=MyISAM AUTO_INCREMENT=33 DEFAULT CHARSET=latin1;
 
 --
 -- Déchargement des données de la table `paiement_order`
 --
 
-INSERT INTO `paiement_order` (`id`, `amount`, `creation_date`, `merchand_orderid`, `order_details`, `order_status`, `reference`, `customerid`, `merchandid`) VALUES
+INSERT INTO `paiement_order` (`id`, `amount`, `creation_date`, `merchant_orderid`, `order_details`, `order_status`, `reference`, `customerid`, `merchantid`) VALUES
 (1, '300.00', '2019-08-05 01:20:05', '12345', 'e\'t(yrtt', 0, '4b48fd51-4cb6-48e1-96b1-6c9f73c0c109', 1, 1),
 (2, '4318.00', '2019-08-05 01:22:23', '6', ' Robe d\'été imprimée ', 0, '91ece03a-9ff7-45c5-ac23-55bc8e67f50a', 2, 1),
 (3, '4318.00', '2019-08-05 01:27:55', '6', ' Robe d\'été imprimée ', 0, '7b86ef83-87f4-4e4d-91c3-520ee742646f', 3, 1),

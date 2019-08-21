@@ -1,13 +1,11 @@
 import React, { Component, Fragment } from 'react';
 
 import {
-    Button, Alert, Card, CardImg, CardBody,
-    CardTitle, CardText, Popover, PopoverHeader, PopoverBody
+  Button, Alert, Card, CardImg, CardBody,
+  CardTitle, CardText, Popover, PopoverHeader, PopoverBody, CardLink
 } from 'reactstrap';
-import qr_code from "../img/qr_code.png";
 import { QRCode } from "react-qr-svg";
 import PropTypes from "prop-types";
-const CRCODE = 'https://i.imgur.com/CaKdFMq.jpg';
 
 class PendingPayment extends Component {
     static get propTypes() {
@@ -15,7 +13,8 @@ class PendingPayment extends Component {
             reference: PropTypes.string,
             walletName:PropTypes.string,
             walletLogo:PropTypes.string,
-            orderStatus:PropTypes.string
+            orderStatus:PropTypes.string,
+            retourUrl:PropTypes.string
         };
     }
     constructor(props) {
@@ -67,6 +66,9 @@ class PendingPayment extends Component {
                                 style={{fontSize: '0.75rem'}}>
                           {this.props.reference}
                       </CardText>
+                    <CardLink>
+                      <a href={this.props.retourUrl+"&RESPONSE_CODE=1028"}>Revenir au site marchand </a>
+                    </CardLink>
                   </CardBody>
                   </Card>
               </Fragment>
@@ -74,23 +76,19 @@ class PendingPayment extends Component {
         } else{
             return (
               <Fragment>
-                  <Alert color="secondary">
+                  <Alert color="success">
                       <div className="container">
-                          <strong>Payer avec votre compte {this.props.walletName}</strong>
+                          <strong>Commande payée gràce à {this.props.walletName}</strong>
                           <img src={this.props.walletLogo} alt="logo" className="float-right" height="24"/>
                       </div>
                   </Alert>
                   <Card>
-                      <CardTitle className="align-items-center d-flex justify-content-center h6 pt-2 pl-2">Scanner le
-                          QRCode avec votre Application SoPay</CardTitle>
+                      <CardTitle color="success" className="align-items-center d-flex justify-content-center h6 pt-2 pl-2">
+                        Transaction effectué avec succès</CardTitle>
                    <CardBody className="text-center">
-                      <CardTitle
-                        className="align-items-center d-flex justify-content-center h6 font-weight-bold text-secondary">Cliquer
-                          pour copier la référence</CardTitle>
-                    <CardText className="align-items-center d-flex justify-content-center text-secondary mb-4"
-                                style={{fontSize: '0.75rem'}}>
-                          {this.props.reference}
-                      </CardText>
+                     <CardLink>
+                       <a href={this.props.retourUrl}>Revenir au site marchand </a>
+                     </CardLink>
                   </CardBody>
                   </Card>
               </Fragment>

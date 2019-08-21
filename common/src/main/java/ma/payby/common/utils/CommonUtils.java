@@ -9,7 +9,7 @@ public class CommonUtils {
     public static Map<String, String> ERROR_BUSINESS;
     static {
         ERROR_BUSINESS = new HashMap<>();
-        ERROR_BUSINESS.put("M00001","Merchand not found!");
+        ERROR_BUSINESS.put("M00001","Merchant not found!");
         ERROR_BUSINESS.put("M00002","Order not found!");
         ERROR_BUSINESS.put("M00003","Order already payed!");
         ERROR_BUSINESS.put("M00004","Order expired");

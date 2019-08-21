@@ -18,14 +18,14 @@ public class Order {
     private String orderDetails;
     private OrderStatus orderStatus;
     @ManyToOne
-    @JoinColumn(name = "merchandID")
-    private Merchand merchand;
+    @JoinColumn(name = "merchantID")
+    private Merchant merchant;
     @ManyToOne(fetch = FetchType.LAZY, cascade = {CascadeType.ALL})
     @JoinColumn(name = "customerID")
     private Customer customer;
     @Column(unique = true)
     private String reference;
-    private String merchandOrderID;
+    private String merchantOrderID;
 
 
     public Long getOrderID() {
@@ -68,12 +68,12 @@ public class Order {
         this.orderStatus = orderStatus;
     }
 
-    public Merchand getMerchand() {
-        return merchand;
+    public Merchant getMerchant() {
+        return merchant;
     }
 
-    public void setMerchand(Merchand merchand) {
-        this.merchand = merchand;
+    public void setMerchant(Merchant merchant) {
+        this.merchant = merchant;
     }
 
     public Customer getCustomer() {
@@ -92,11 +92,11 @@ public class Order {
         this.reference = reference;
     }
 
-    public String getMerchandOrderID() {
-        return merchandOrderID;
+    public String getMerchantOrderID() {
+        return merchantOrderID;
     }
 
-    public void setMerchandOrderID(String merchandOrderID) {
-        this.merchandOrderID = merchandOrderID;
+    public void setMerchantOrderID(String merchantOrderID) {
+        this.merchantOrderID = merchantOrderID;
     }
 }

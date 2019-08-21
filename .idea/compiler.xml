@@ -8,14 +8,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="discovery-service" />
         <module name="common-service" />
-        <module name="merchand-service" />
         <module name="common" />
         <module name="proxy-service" />
         <module name="frontend-payment" />
         <module name="config-service" />
-        <module name="wallet-service" />
         <module name="common-model-jpa" />
         <module name="frontend-backoffice" />
+        <module name="wallet-service" />
+        <module name="merchant-service" />
         <module name="admin-service" />
       </profile>
     </annotationProcessing>
@@ -29,7 +29,7 @@
       <module name="frontend-backoffice" target="1.8" />
       <module name="frontend-payment" target="1.8" />
       <module name="gateway-service" target="1.8" />
-      <module name="merchand-service" target="1.8" />
+      <module name="merchant-service" target="1.8" />
       <module name="proxy-service" target="1.8" />
       <module name="services" target="1.8" />
       <module name="wallet-service" target="1.8" />
@@ -46,7 +46,7 @@
       <module name="frontend-backoffice" options="-parameters" />
       <module name="frontend-payment" options="-parameters" />
       <module name="gateway-service" options="-parameters" />
-      <module name="merchand-service" options="-parameters" />
+      <module name="merchant-service" options="-parameters" />
       <module name="proxy-service" options="-parameters" />
       <module name="wallet-service" options="-parameters" />
     </option>

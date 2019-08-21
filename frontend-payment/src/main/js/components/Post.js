@@ -7,9 +7,9 @@ class Post extends Component {
   static get propTypes() {
     return {
       reference: PropTypes.string,
-      merchandUrlWebsite:PropTypes.string,
-      merchandLogo:PropTypes.string,
-      merchandOrderID:PropTypes.string,
+      merchantUrlWebsite:PropTypes.string,
+      merchantLogo:PropTypes.string,
+      merchantOrderID:PropTypes.string,
       orderDetails:PropTypes.string,
       amount:PropTypes.string,
       customerLastName:PropTypes.string,
@@ -29,8 +29,8 @@ class Post extends Component {
         <div className="position-relative">
           <Alert color="secondary">
             <div className="container">
-              <strong>{this.props.merchandUrlWebsite}</strong>
-              <img src={this.props.merchandLogo} alt="logo" className="float-right" height="24"/>
+              <strong>{this.props.merchantUrlWebsite}</strong>
+              <img src={this.props.merchantLogo} alt="logo" className="float-right" height="24"/>
 
             </div>
           </Alert>
@@ -39,7 +39,7 @@ class Post extends Component {
               <tbody>
               <tr>
                 <th>N° de Commande</th>
-                <td>{this.props.merchandOrderID}</td>
+                <td>{this.props.merchantOrderID}</td>
               </tr>
               <tr>
                 <th>Détails</th>

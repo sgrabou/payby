@@ -13,10 +13,10 @@ public class OrderDTO {
     private BigDecimal amount;
     private String orderDetails;
     private OrderStatus orderStatus;
-    private MerchandDTO merchand;
+    private MerchantDTO merchant;
     private CustomerDTO customer;
     private String reference;
-    private String merchandOrderID;
+    private String merchantOrderID;
     private String displayedAmount;
 
     public Long getOrderID() {
@@ -59,12 +59,12 @@ public class OrderDTO {
         this.orderStatus = orderStatus;
     }
 
-    public MerchandDTO getMerchand() {
-        return merchand;
+    public MerchantDTO getMerchant() {
+        return merchant;
     }
 
-    public void setMerchand(MerchandDTO merchand) {
-        this.merchand = merchand;
+    public void setMerchant(MerchantDTO merchant) {
+        this.merchant = merchant;
     }
 
     public CustomerDTO getCustomer() {
@@ -83,12 +83,12 @@ public class OrderDTO {
         this.reference = reference;
     }
 
-    public String getMerchandOrderID() {
-        return merchandOrderID;
+    public String getMerchantOrderID() {
+        return merchantOrderID;
     }
 
-    public void setMerchandOrderID(String merchandOrderID) {
-        this.merchandOrderID = merchandOrderID;
+    public void setMerchantOrderID(String merchantOrderID) {
+        this.merchantOrderID = merchantOrderID;
     }
 
     public String getDisplayedAmount() {

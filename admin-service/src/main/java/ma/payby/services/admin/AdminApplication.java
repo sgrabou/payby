@@ -29,7 +29,7 @@ public class AdminApplication {
 	}
 
 	@Bean
-	public Docket swaggerMerchandApi() {
+	public Docket swaggerMerchantApi() {
 		return new Docket(DocumentationType.SWAGGER_2)
 				.select()
 					.apis(RequestHandlerSelectors.basePackage("ma.payby.services.admin.controller"))

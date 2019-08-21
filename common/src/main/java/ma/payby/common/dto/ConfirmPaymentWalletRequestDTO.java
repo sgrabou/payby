@@ -5,19 +5,19 @@ import ma.payby.common.enums.OrderStatus;
 import java.util.Date;
 
 public class ConfirmPaymentWalletRequestDTO {
-    private String refernece;
+    private String reference;
     private String amount;
-    private String marchadPhoneNumber;
+    private String merchantPhoneNumber;
     private OrderStatus orderStatus;
     private Date dateStatut;
     private String signature;
 
-    public String getRefernece() {
-        return refernece;
+    public String getReference() {
+        return reference;
     }
 
-    public void setRefernece(String refernece) {
-        this.refernece = refernece;
+    public void setReference(String reference) {
+        this.reference = reference;
     }
 
     public String getAmount() {
@@ -28,12 +28,12 @@ public class ConfirmPaymentWalletRequestDTO {
         this.amount = amount;
     }
 
-    public String getMarchadPhoneNumber() {
-        return marchadPhoneNumber;
+    public String getMerchantPhoneNumber() {
+        return merchantPhoneNumber;
     }
 
-    public void setMarchadPhoneNumber(String marchadPhoneNumber) {
-        this.marchadPhoneNumber = marchadPhoneNumber;
+    public void setMerchantPhoneNumber(String merchantPhoneNumber) {
+        this.merchantPhoneNumber = merchantPhoneNumber;
     }
 
     public OrderStatus getOrderStatus() {

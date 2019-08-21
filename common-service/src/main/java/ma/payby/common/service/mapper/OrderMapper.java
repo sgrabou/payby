@@ -3,7 +3,7 @@ package ma.payby.common.service.mapper;
 import ma.payby.common.dto.*;
 import ma.payby.common.enums.OrderStatus;
 import ma.payby.common.jpa.model.Customer;
-import ma.payby.common.jpa.model.Merchand;
+import ma.payby.common.jpa.model.Merchant;
 import ma.payby.common.jpa.model.Order;
 import ma.payby.common.utils.CommonUtils;
 import org.springframework.beans.BeanUtils;
@@ -18,7 +18,7 @@ public class OrderMapper {
         CustomerDTO customerDTO = new CustomerDTO();
         BeanUtils.copyProperties(order.getCustomer(),customerDTO);
         orderDTO.setCustomer(customerDTO);
-        orderDTO.setMerchand(MerchandMapper.toMerchandDTO(order.getMerchand()));
+        orderDTO.setMerchant(MerchantMapper.toMerchantDTO(order.getMerchant()));
 
         return orderDTO;
     }
@@ -30,28 +30,28 @@ public class OrderMapper {
         BeanUtils.copyProperties(orderDTO.getCustomer(),customer);
 
         order.setCustomer(customer);
-        order.setMerchand(MerchandMapper.toMerchand(orderDTO.getMerchand()));
+        order.setMerchant(MerchantMapper.toMerchant(orderDTO.getMerchant()));
         return order;
     }
 
-    public static Order toOrder(InitierPaymentMerchandRequestDTO initierPaymentMerchandRequestDTO, Merchand merchand){
+    public static Order toOrder(InitierPaymentMerchantRequestDTO initierPaymentMerchantRequestDTO, Merchant merchant){
         Order order = new Order();
         Customer customer = new Customer();
-        customer.setAddress(initierPaymentMerchandRequestDTO.getCustomerAdress());
-        customer.setCodePostal(initierPaymentMerchandRequestDTO.getCodePostal());
-        customer.setEmail(initierPaymentMerchandRequestDTO.getEmail());
-        customer.setLastName(initierPaymentMerchandRequestDTO.getCustomerLastName());
-        customer.setFirstName(initierPaymentMerchandRequestDTO.getCustomerfirstName());
-        customer.setPhoneNumber(initierPaymentMerchandRequestDTO.getPhoneNumber());
-        customer.setVille(initierPaymentMerchandRequestDTO.getVille());
-        customer.setPays(initierPaymentMerchandRequestDTO.getPays());
+        customer.setAddress(initierPaymentMerchantRequestDTO.getCustomerAdress());
+        customer.setCodePostal(initierPaymentMerchantRequestDTO.getCodePostal());
+        customer.setEmail(initierPaymentMerchantRequestDTO.getEmail());
+        customer.setLastName(initierPaymentMerchantRequestDTO.getCustomerLastName());
+        customer.setFirstName(initierPaymentMerchantRequestDTO.getCustomerfirstName());
+        customer.setPhoneNumber(initierPaymentMerchantRequestDTO.getPhoneNumber());
+        customer.setVille(initierPaymentMerchantRequestDTO.getVille());
+        customer.setPays(initierPaymentMerchantRequestDTO.getPays());
         order.setCustomer(customer);
-        order.setMerchand(merchand);
+        order.setMerchant(merchant);
         order.setOrderStatus(OrderStatus.ENATTENTE);
-        order.setAmount(initierPaymentMerchandRequestDTO.getAmount());
-        order.setOrderDetails(initierPaymentMerchandRequestDTO.getOrderDetails());
+        order.setAmount(initierPaymentMerchantRequestDTO.getAmount());
+        order.setOrderDetails(initierPaymentMerchantRequestDTO.getOrderDetails());
         order.setCreationDate(new Date());
-        order.setMerchandOrderID(initierPaymentMerchandRequestDTO.getOrderID());
+        order.setMerchantOrderID(initierPaymentMerchantRequestDTO.getOrderID());
         order.setReference(CommonUtils.generateReference());
 
         return order;
@@ -60,25 +60,25 @@ public class OrderMapper {
     public static OrderWalletResponseDTO toOrderWalletResponseDTO(OrderDTO orderDTO){
         OrderWalletResponseDTO orderWalletResponseDTO = new OrderWalletResponseDTO();
         orderWalletResponseDTO.setAmount(orderDTO.getAmount());
-        orderWalletResponseDTO.setMerchandName(orderDTO.getMerchand().getName());
-        orderWalletResponseDTO.setMerchandNumber(orderDTO.getMerchand().getMobileNumber());
+        orderWalletResponseDTO.setMerchantName(orderDTO.getMerchant().getName());
+        orderWalletResponseDTO.setMerchantNumber(orderDTO.getMerchant().getMobileNumber());
         orderWalletResponseDTO.setOrderStatus(orderDTO.getOrderStatus());
         orderWalletResponseDTO.setOrderDetails(orderDTO.getOrderDetails());
         return orderWalletResponseDTO;
     }
 
-    public static ConfirmPaymentMerchandRequestDTO toConfirmPaymentMerchandRequestDTO(OrderDTO orderDTO, Date dateStatus, OrderStatus orderStatus){
-        ConfirmPaymentMerchandRequestDTO confirmPaymentMerchandRequestDTO = new ConfirmPaymentMerchandRequestDTO();
-        confirmPaymentMerchandRequestDTO.setAmount(orderDTO.getAmount());
-        confirmPaymentMerchandRequestDTO.setCode("01");
-        confirmPaymentMerchandRequestDTO.setMessage("success");
-        confirmPaymentMerchandRequestDTO.setMerchandUserName(orderDTO.getMerchand().getUserName());
-        confirmPaymentMerchandRequestDTO.setOrderID(orderDTO.getMerchandOrderID());
-        confirmPaymentMerchandRequestDTO.setPaybyVersion("PayByVesrion");
-        confirmPaymentMerchandRequestDTO.setRefernece(orderDTO.getReference());
-        confirmPaymentMerchandRequestDTO.setTransactionDate(dateStatus);
-        confirmPaymentMerchandRequestDTO.setStatus(orderStatus);
-        return confirmPaymentMerchandRequestDTO;
+    public static ConfirmPaymentMerchantRequestDTO toConfirmPaymentMerchantRequestDTO(OrderDTO orderDTO, Date dateStatus, OrderStatus orderStatus){
+        ConfirmPaymentMerchantRequestDTO confirmPaymentMerchantRequestDTO = new ConfirmPaymentMerchantRequestDTO();
+        confirmPaymentMerchantRequestDTO.setAmount(orderDTO.getAmount());
+        confirmPaymentMerchantRequestDTO.setCode("01");
+        confirmPaymentMerchantRequestDTO.setMessage("success");
+        confirmPaymentMerchantRequestDTO.setMerchantUserName(orderDTO.getMerchant().getUserName());
+        confirmPaymentMerchantRequestDTO.setOrderID(orderDTO.getMerchantOrderID());
+        confirmPaymentMerchantRequestDTO.setPaybyVersion("PayByVesrion");
+        confirmPaymentMerchantRequestDTO.setReference(orderDTO.getReference());
+        confirmPaymentMerchantRequestDTO.setTransactionDate(dateStatus);
+        confirmPaymentMerchantRequestDTO.setStatus(orderStatus);
+        return confirmPaymentMerchantRequestDTO;
     }
 
 
