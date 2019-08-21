@@ -4,13 +4,19 @@ import {
     Button, Alert, Card, CardImg, CardBody,
     CardTitle, CardText, Popover, PopoverHeader, PopoverBody
 } from 'reactstrap';
-import sopay_logo from "../img/sopay_logo.png";
 import qr_code from "../img/qr_code.png";
-
+import { QRCode } from "react-qr-svg";
+import PropTypes from "prop-types";
 const CRCODE = 'https://i.imgur.com/CaKdFMq.jpg';
 
-class SideCard extends Component {
-
+class PendingPayment extends Component {
+    static get propTypes() {
+        return {
+            reference: PropTypes.string,
+            walletName:PropTypes.string,
+            walletLogo:PropTypes.string
+        };
+    }
     constructor(props) {
         super(props);
         this.toggle = this.toggle.bind(this);
@@ -40,8 +46,13 @@ class SideCard extends Component {
                 <Card>
                     <CardTitle className="align-items-center d-flex justify-content-center h6 pt-2 pl-2">Scanner le
                         QRCode avec votre Application SoPay</CardTitle>
-                    <CardImg className="mx-auto" src={qr_code} alt="qr code" style={{width: '60%'}}/>
-                    <CardBody className="text-center">
+                    <QRCode className="mx-auto"
+                      bgColor="#FFFFFF"
+                      fgColor="#000000"
+                      level="Q"
+                      style={{ width: 256 }}
+                      value={this.state.reference}
+                    />                    <CardBody className="text-center">
                         <CardTitle
                             className="align-items-center d-flex justify-content-center h6 font-weight-bold text-secondary">Cliquer
                             pour copier la référence</CardTitle>
@@ -62,4 +73,4 @@ class SideCard extends Component {
         );
     }
 }
-export default SideCard;
+export default PendingPayment;

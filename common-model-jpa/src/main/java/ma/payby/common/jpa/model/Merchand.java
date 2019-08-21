@@ -22,6 +22,7 @@ public class Merchand {
     private MerchandStatus merchandStatus;
     private String privateKey;
     private String publicKey;
+    private String secretKey;
     private String paybyRedirectionURL;
     private String merchandResponseURL;
     private String urlWebsite;
@@ -149,5 +150,13 @@ public class Merchand {
 
     public void setWallet(Wallet wallet) {
         this.wallet = wallet;
+    }
+
+    public String getSecretKey() {
+        return secretKey;
+    }
+
+    public void setSecretKey(String secretKey) {
+        this.secretKey = secretKey;
     }
 }

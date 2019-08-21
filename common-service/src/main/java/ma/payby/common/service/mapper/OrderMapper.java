@@ -44,7 +44,7 @@ public class OrderMapper {
         customer.setFirstName(initierPaymentMerchandRequestDTO.getCustomerfirstName());
         customer.setPhoneNumber(initierPaymentMerchandRequestDTO.getPhoneNumber());
         customer.setVille(initierPaymentMerchandRequestDTO.getVille());
-        customer.setPaye(initierPaymentMerchandRequestDTO.getPays());
+        customer.setPays(initierPaymentMerchandRequestDTO.getPays());
         order.setCustomer(customer);
         order.setMerchand(merchand);
         order.setOrderStatus(OrderStatus.ENATTENTE);
@@ -78,7 +78,6 @@ public class OrderMapper {
         confirmPaymentMerchandRequestDTO.setRefernece(orderDTO.getReference());
         confirmPaymentMerchandRequestDTO.setTransactionDate(dateStatus);
         confirmPaymentMerchandRequestDTO.setStatus(orderStatus);
-        confirmPaymentMerchandRequestDTO.setSignature("hhhhhhhh");
         return confirmPaymentMerchandRequestDTO;
     }
 

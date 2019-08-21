@@ -13,6 +13,7 @@ public class MerchandDTO {
     private MerchandStatus merchandStatus;
     private String privateKey;
     private String publicKey;
+    private String secretKey;
     private String paybyRedirectionURL;
     private String merchandResponseURL;
     private String urlWebsite;
@@ -138,5 +139,13 @@ public class MerchandDTO {
 
     public void setWallet(WalletDTO wallet) {
         this.wallet = wallet;
+    }
+
+    public String getSecretKey() {
+        return secretKey;
+    }
+
+    public void setSecretKey(String secretKey) {
+        this.secretKey = secretKey;
     }
 }

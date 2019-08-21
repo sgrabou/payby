@@ -4,7 +4,7 @@ import {
     Card, Button, CardFooter, CardBody,
     CardTitle, CardText, Container, Row, Col, Alert
 } from 'reactstrap';
-import SideCard from "./SideCard";
+import PendingPayment from "./PendingPayment";
 import Post from "./Post";
 import sopay_logo from "../img/sopay_logo.png";
 

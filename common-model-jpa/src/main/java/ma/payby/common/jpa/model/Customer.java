@@ -13,7 +13,7 @@ public class Customer {
     private String address;
     private String codePostal;
     private String ville;
-    private String paye;
+    private String pays;
     private String phoneNumber;
     private String email;
 
@@ -65,12 +65,12 @@ public class Customer {
         this.ville = ville;
     }
 
-    public String getPaye() {
-        return paye;
+    public String getPays() {
+        return pays;
     }
 
-    public void setPaye(String paye) {
-        this.paye = paye;
+    public void setPays(String pays) {
+        this.pays = pays;
     }
 
     public String getPhoneNumber() {

@@ -9,7 +9,11 @@ public class WalletDTO {
     private String walletOwner;
     private String apiKey;
     private WalletStatus walletStatus;
+    private String privateKey;
+    private String publicKey;
+    private String secretKey;
     private String logo;
+
 
     public Long getWalletID() {
         return walletID;
@@ -57,6 +61,30 @@ public class WalletDTO {
 
     public void setWalletStatus(WalletStatus walletStatus) {
         this.walletStatus = walletStatus;
+    }
+
+    public String getPrivateKey() {
+        return privateKey;
+    }
+
+    public void setPrivateKey(String privateKey) {
+        this.privateKey = privateKey;
+    }
+
+    public String getPublicKey() {
+        return publicKey;
+    }
+
+    public void setPublicKey(String publicKey) {
+        this.publicKey = publicKey;
+    }
+
+    public String getSecretKey() {
+        return secretKey;
+    }
+
+    public void setSecretKey(String secretKey) {
+        this.secretKey = secretKey;
     }
 
     public String getLogo() {

@@ -1,19 +1,21 @@
 package ma.payby.services.merchand.service;
 
-import ma.payby.common.dto.InitierPaymentMerchandRequestDTO;
-import ma.payby.common.dto.InitierPaymentMerchandResponseDTO;
-import ma.payby.common.dto.OrderDTO;
-import ma.payby.common.dto.OrderEditStatusRequestDTO;
+import ma.payby.common.dto.*;
 import ma.payby.common.exception.BusinessException;
 import ma.payby.common.jpa.model.Merchand;
 import ma.payby.common.jpa.model.Order;
+import ma.payby.common.jpa.model.Paiement;
 import ma.payby.common.jpa.repository.MerchandRepository;
 import ma.payby.common.jpa.repository.OrderRepository;
 import ma.payby.common.service.mapper.OrderMapper;
 import ma.payby.common.utils.CommonUtils;
+import ma.payby.common.utils.SignatureUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.io.UnsupportedEncodingException;
+import java.security.InvalidKeyException;
+import java.security.NoSuchAlgorithmException;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -52,11 +54,10 @@ public class OrderService {
         Merchand merchand = merchandRepository.findByUserName(initierPaymentMerchandRequestDTO.getMerchandUserName());
             if(merchand == null)
                 throw new BusinessException("M00001",CommonUtils.ERROR_BUSINESS.get("M00001"));
-
+        validateOrderCreation(merchand,initierPaymentMerchandRequestDTO);
         Order savedOrder = orderRepository.save(OrderMapper.toOrder(initierPaymentMerchandRequestDTO,merchand));
             if(savedOrder == null)
                 throw new BusinessException("M00005",CommonUtils.ERROR_BUSINESS.get("M00005"));
-
         InitierPaymentMerchandResponseDTO initierPaymentMerchandResponseDTO = new InitierPaymentMerchandResponseDTO();
         initierPaymentMerchandResponseDTO.setMerchandOrderID(savedOrder.getMerchandOrderID());
         initierPaymentMerchandResponseDTO.setMerchandUserName(savedOrder.getMerchand().getUserName());
@@ -75,5 +76,37 @@ public class OrderService {
         order.setOrderStatus(orderEditStatusRequestDTO.getOrderStatus());
         Order savedOrder = orderRepository.save(order);
         return OrderMapper.toOrderDTO(savedOrder);
+    }
+
+    private void validateOrderCreation(Merchand merchand,InitierPaymentMerchandRequestDTO initierPaymentMerchandRequestDTO)
+            throws BusinessException{
+        StringBuilder data = new StringBuilder();
+        String signature="";
+        data.append(merchand.getPaybyVersion())
+                .append(merchand.getUserName())
+                .append(initierPaymentMerchandRequestDTO.getAmount())
+                .append(initierPaymentMerchandRequestDTO.getOrderID())
+                .append(initierPaymentMerchandRequestDTO.getOrderDetails())
+                .append(merchand.getMerchandResponseURL())
+                .append(initierPaymentMerchandRequestDTO.getCustomerLastName())
+                .append(initierPaymentMerchandRequestDTO.getCustomerfirstName())
+                .append(initierPaymentMerchandRequestDTO.getCustomerAdress())
+                .append(initierPaymentMerchandRequestDTO.getCodePostal())
+                .append(initierPaymentMerchandRequestDTO.getVille())
+                .append(initierPaymentMerchandRequestDTO.getPays())
+                .append(initierPaymentMerchandRequestDTO.getPhoneNumber())
+                .append(initierPaymentMerchandRequestDTO.getEmail())
+                .append(merchand.getMerchandResponseURL());
+
+        try {
+            signature = SignatureUtils.encode(merchand.getSecretKey(),data.toString());
+        } catch (NoSuchAlgorithmException |
+                UnsupportedEncodingException | InvalidKeyException e) {
+            throw new BusinessException("T00001", CommonUtils.ERROR_BUSINESS.get("T00001"));
+
+        }
+        if(!signature.toUpperCase().equals(initierPaymentMerchandRequestDTO.getSignature()))
+            throw new BusinessException("M00006", CommonUtils.ERROR_BUSINESS.get("M00006"));
+
     }
 }

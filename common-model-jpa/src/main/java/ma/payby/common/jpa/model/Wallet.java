@@ -17,6 +17,7 @@ public class Wallet {
     private WalletStatus walletStatus;
     private String privateKey;
     private String publicKey;
+    private String secretKey;
     private String logo;
 
     public Long getWalletID() {
@@ -89,5 +90,13 @@ public class Wallet {
 
     public void setLogo(String logo) {
         this.logo = logo;
+    }
+
+    public String getSecretKey() {
+        return secretKey;
+    }
+
+    public void setSecretKey(String secretKey) {
+        this.secretKey = secretKey;
     }
 }

@@ -58,7 +58,7 @@ CREATE TABLE IF NOT EXISTS `customer` (
   `email` varchar(255) DEFAULT NULL,
   `first_name` varchar(255) DEFAULT NULL,
   `last_name` varchar(255) DEFAULT NULL,
-  `paye` varchar(255) DEFAULT NULL,
+  `pays` varchar(255) DEFAULT NULL,
   `phone_number` varchar(255) DEFAULT NULL,
   `ville` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
@@ -68,7 +68,7 @@ CREATE TABLE IF NOT EXISTS `customer` (
 -- Déchargement des données de la table `customer`
 --
 
-INSERT INTO `customer` (`id`, `address`, `code_postal`, `email`, `first_name`, `last_name`, `paye`, `phone_number`, `ville`) VALUES
+INSERT INTO `customer` (`id`, `address`, `code_postal`, `email`, `first_name`, `last_name`, `pays`, `phone_number`, `ville`) VALUES
 (1, '222,dfdf dfdf dfdf Casablanca', '40000', 'ssdsd@dsdsd.sd', 'hola', 'holi', 'Maroc', '065454545', 'taza'),
 (2, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon'),
 (3, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon'),

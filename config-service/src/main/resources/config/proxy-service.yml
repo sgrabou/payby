@@ -21,3 +21,6 @@ zuul:
     admin:
       path: /admin/**
       serviceId: admin-service
+
+ribbon:
+  ReadTimeout: 60000

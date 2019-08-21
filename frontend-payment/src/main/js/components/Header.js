@@ -16,7 +16,7 @@ const Header = () => (
         <Row noGutters className="position-relative w-100 align-items-center">
 
           <Col className="d-flex justify-content-xs-start justify-content-lg-center">
-            <NavbarBrand className="d-inline-block p-0" href="/" style={{ width: 80 }}>
+            <NavbarBrand className="d-inline-block p-0" href="https://payby.ma" style={{ width: 80 }}>
               <img src={logo} alt="logo" className="position-relative img-fluid" />
             </NavbarBrand>
           </Col>

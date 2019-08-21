@@ -8,9 +8,9 @@ import java.util.Date;
 
 public class ConfirmPaymentMerchandRequestDTO {
 
-    @JsonProperty("REASON_CODE")
-    private String code;
     @JsonProperty("RESPONSE_CODE")
+    private String code;
+    @JsonProperty("RESPONSE_MESSAGE")
     private String message;
     @JsonProperty("PAYBY_MESSAGE_VERSION")
     private String paybyVersion;
