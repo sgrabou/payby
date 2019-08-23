@@ -12,3 +12,4 @@ videos
 .classpath
 .factorypath
 .settings
+*/.gitignore
