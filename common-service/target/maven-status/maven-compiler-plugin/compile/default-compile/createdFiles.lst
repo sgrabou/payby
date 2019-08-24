@@ -1,6 +1,0 @@
-ma\payby\common\service\mapper\PaiementMapper.class
-ma\payby\common\service\mapper\WalletMapper.class
-ma\payby\common\service\mapper\OrderMapper.class
-ma\payby\common\service\mapper\MerchantMapper.class
-ma\payby\common\service\exception\BusinessException.class
-ma\payby\common\service\mapper\UserMapper.class
