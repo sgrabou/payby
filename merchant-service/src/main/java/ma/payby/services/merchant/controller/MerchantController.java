@@ -5,6 +5,7 @@ import ma.payby.common.dto.InitierPaymentMerchantRequestDTO;
 import ma.payby.common.dto.InitierPaymentMerchantResponseDTO;
 import ma.payby.common.dto.OrderDTO;
 import ma.payby.common.dto.OrderEditStatusRequestDTO;
+import ma.payby.common.enums.OrderStatus;
 import ma.payby.common.exception.BusinessException;
 import ma.payby.services.merchant.service.OrderService;
 import org.slf4j.Logger;
@@ -34,6 +35,12 @@ public class MerchantController {
     public ResponseEntity<OrderDTO> findByReference(@PathVariable("reference") String reference) throws BusinessException {
         LOGGER.info("Order find: reference={}", reference);
         return new ResponseEntity<>(orderService.getOrderByReference(reference), HttpStatus.OK);
+    }
+
+    @GetMapping("/api/v1/order/status/{reference}")
+    public ResponseEntity<OrderStatus> findOrderStatusByReference(@PathVariable("reference") String reference) throws BusinessException {
+        LOGGER.info("Order find: reference={}", reference);
+        return new ResponseEntity<>(orderService.getOrderStatusByReference(reference), HttpStatus.OK);
     }
 
     @GetMapping("/api/v1/order")

@@ -1,6 +1,7 @@
 package ma.payby.services.merchant.service;
 
 import ma.payby.common.dto.*;
+import ma.payby.common.enums.OrderStatus;
 import ma.payby.common.exception.BusinessException;
 import ma.payby.common.jpa.model.Merchant;
 import ma.payby.common.jpa.model.Order;
@@ -41,6 +42,14 @@ public class OrderService {
             throw new BusinessException("M00002", CommonUtils.ERROR_BUSINESS.get("M00002"));
 
         return OrderMapper.toOrderDTO(order);
+    }
+
+    public OrderStatus getOrderStatusByReference(String reference) throws BusinessException {
+        Order order = orderRepository.findByReference(reference);
+        if(order == null)
+            throw new BusinessException("M00002", CommonUtils.ERROR_BUSINESS.get("M00002"));
+
+        return order.getOrderStatus();
     }
 
     public List<OrderDTO> getAllOrder() throws BusinessException {
