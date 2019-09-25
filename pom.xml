@@ -23,7 +23,8 @@
 		<module>admin-service</module>
 		<module>merchant-service</module>
 		<module>wallet-service</module>
-		<module>frontend-backoffice</module>
+		<!--<module>frontend-backoffice</module>-->
 		<module>frontend-payment</module>
-	</modules>
+        <module>frontend-backoffice</module>
+    </modules>
 </project>
