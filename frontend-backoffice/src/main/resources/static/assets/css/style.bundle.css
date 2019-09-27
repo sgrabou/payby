@@ -34903,7 +34903,7 @@ body {
     align-items: stretch;
     margin: 0; }
     .kt-header__topbar .kt-header__topbar-item .kt-header__topbar-wrapper {
-      cursor: pointer;
+      right  : 0;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;

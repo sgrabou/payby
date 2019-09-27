@@ -13,7 +13,7 @@ var KTDefaultDatatableDemo = function() {
 				type: 'remote',
 				source: {
 					read: {
-						url: 'https://keenthemes.com/metronic/themes/themes/metronic/dist/preview/inc/api/datatables/demos/default.php',
+						url: 'http://localhost:8060/admin/api/v1/merchant',
 					},
 				},
 				pageSize: 5, // display 20 records per page
@@ -54,7 +54,7 @@ var KTDefaultDatatableDemo = function() {
 			// columns definition
 			columns: [
 				{
-					field: 'RecordID',
+					field: 'merchantID',
 					title: '#',
 					sortable: false,
 					width: 30,
@@ -62,24 +62,22 @@ var KTDefaultDatatableDemo = function() {
 					selector: {class: 'kt-checkbox--solid'},
 					textAlign: 'center',
 				}, {
-					field: 'OrderID',
-					title: 'Order ID',
+					field: 'userName',
+					title: 'Merchant',
 				}, {
-					field: 'Country',
-					title: 'Country',
+					field: 'urlWebsite',
+					title: 'Site Web',
 					template: function(row) {
 						return row.Country + ' ' + row.ShipCountry;
 					},
 				}, {
-					field: 'ShipDate',
-					title: 'Ship Date',
-					type: 'date',
-					format: 'MM/DD/YYYY',
+					field: 'mobileNumber',
+					title: 'Téléphone',
 				}, {
-					field: 'CompanyName',
-					title: 'Company Name',
+					field: 'email',
+					title: 'Email',
 				}, {
-					field: 'Status',
+					field: 'merchantStatus',
 					title: 'Status',
 					// callback function support for column rendering
 					template: function(row) {
