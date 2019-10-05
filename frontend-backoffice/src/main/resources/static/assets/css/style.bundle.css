@@ -36119,6 +36119,10 @@ body {
 
 .kt-footer {
   padding: 20px 0px;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    width: 75%;
   background: #ffffff; }
   .kt-footer .kt-container {
     display: -webkit-box;
