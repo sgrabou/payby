@@ -1450,7 +1450,9 @@ var KTDashboard = function() {
                 type: 'remote',
                 source: {
                     read: {
-                        url: 'http://localhost:8060/admin/api/v1/merchant'
+                        url: 'http://localhost:8060/admin/api/v1/merchant',
+                        method: 'GET',
+                        contentType: 'application/json',
                     },
                 },
 
@@ -1495,99 +1497,10 @@ var KTDashboard = function() {
                 field: "merchantStatus",
                 title: "Status",
                 width: 100,
-                // callback function support for column rendering
-                template: function(row) {
-                    var status = {
-                        1: {
-                            'title': 'Pending',
-                            'class': ' btn-label-brand'
-                        },
-                        2: {
-                            'title': 'Processing',
-                            'class': ' btn-label-danger'
-                        },
-                        3: {
-                            'title': 'Success',
-                            'class': ' btn-label-success'
-                        },
-                        4: {
-                            'title': 'Delivered',
-                            'class': ' btn-label-success'
-                        },
-                        5: {
-                            'title': 'Canceled',
-                            'class': ' btn-label-warning'
-                        },
-                        6: {
-                            'title': 'Done',
-                            'class': ' btn-label-danger'
-                        },
-                        7: {
-                            'title': 'On Hold',
-                            'class': ' btn-label-warning'
-                        }
-                    };
-                    return '<span class="btn btn-bold btn-sm btn-font-sm ' + status[row.Status].class + '">' + status[row.Status].title + '</span>';
-                }
             }, {
                 field: "mobileNumber",
                 title: "Téléphone",
-                width: 200,
-                // callback function support for column rendering
-                template: function(data, i) {
-                    var number = 4 + i;
-                    while (number > 12) {
-                        number = number - 3;
-                    }
-                    var user_img = '100_' + number + '.jpg';
-
-                    var pos = KTUtil.getRandomInt(0, 5);
-                    var position = [
-                        'Developer',
-                        'Designer',
-                        'CEO',
-                        'Manager',
-                        'Architect',
-                        'Sales'
-                    ];
-
-					var output = '';
-					if (number > 5) {
-						output = '<div class="kt-user-card-v2">\
-							<div class="kt-user-card-v2__pic">\
-								<img src="https://keenthemes.com/metronic/preview/assets/media/users/' + user_img + '" alt="photo">\
-							</div>\
-							<div class="kt-user-card-v2__details">\
-								<a href="#" class="kt-user-card-v2__name">' + data.CompanyAgent + '</a>\
-								<span class="kt-user-card-v2__desc">' + position[pos] + '</span>\
-							</div>\
-						</div>';
-					}
-					else {
-						var stateNo = KTUtil.getRandomInt(0, 6);
-						var states = [
-							'success',
-							'brand',
-							'danger',
-							'success',
-							'warning',
-							'primary',
-							'info'];
-						var state = states[stateNo];
-
-						output = '<div class="kt-user-card-v2">\
-							<div class="kt-user-card-v2__pic">\
-								<div class="kt-badge kt-badge--xl kt-badge--' + state + '">' + data.CompanyAgent.substring(0, 1) + '</div>\
-							</div>\
-							<div class="kt-user-card-v2__details">\
-								<a href="#" class="kt-user-card-v2__name">' + data.CompanyAgent + '</a>\
-								<span class="kt-user-card-v2__desc">' + position[pos] + '</span>\
-							</div>\
-						</div>';
-					}
-
-					return output;
-                }
+                width: 200
             }, {
                 field: "Actions",
                 width: 80,
