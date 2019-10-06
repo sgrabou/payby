@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  lun. 19 août 2019 à 15:36
+-- Généré le :  Dim 06 oct. 2019 à 08:50
 -- Version du serveur :  5.7.23
 -- Version de PHP :  7.0.32
 
@@ -58,49 +58,67 @@ CREATE TABLE IF NOT EXISTS `customer` (
   `email` varchar(255) DEFAULT NULL,
   `first_name` varchar(255) DEFAULT NULL,
   `last_name` varchar(255) DEFAULT NULL,
-  `pays` varchar(255) DEFAULT NULL,
+  `paye` varchar(255) DEFAULT NULL,
   `phone_number` varchar(255) DEFAULT NULL,
   `ville` varchar(255) DEFAULT NULL,
+  `pays` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=33 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=50 DEFAULT CHARSET=latin1;
 
 --
 -- Déchargement des données de la table `customer`
 --
 
-INSERT INTO `customer` (`id`, `address`, `code_postal`, `email`, `first_name`, `last_name`, `pays`, `phone_number`, `ville`) VALUES
-(1, '222,dfdf dfdf dfdf Casablanca', '40000', 'ssdsd@dsdsd.sd', 'hola', 'holi', 'Maroc', '065454545', 'taza'),
-(2, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon'),
-(3, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon'),
-(4, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon'),
-(5, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon'),
-(6, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon'),
-(7, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon'),
-(8, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon'),
-(9, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon'),
-(10, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon'),
-(11, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon'),
-(12, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon'),
-(13, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon'),
-(14, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon'),
-(15, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon'),
-(16, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon'),
-(17, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon'),
-(18, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon'),
-(19, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon'),
-(20, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon'),
-(21, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon'),
-(22, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon'),
-(23, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon'),
-(24, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon'),
-(25, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon'),
-(26, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon'),
-(27, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon'),
-(28, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon'),
-(29, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon'),
-(30, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon'),
-(31, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon'),
-(32, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon');
+INSERT INTO `customer` (`id`, `address`, `code_postal`, `email`, `first_name`, `last_name`, `paye`, `phone_number`, `ville`, `pays`) VALUES
+(1, '222,dfdf dfdf dfdf Casablanca', '40000', 'ssdsd@dsdsd.sd', 'hola', 'holi', 'Maroc', '065454545', 'taza', NULL),
+(2, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon', NULL),
+(3, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon', NULL),
+(4, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon', NULL),
+(5, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon', NULL),
+(6, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon', NULL),
+(7, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon', NULL),
+(8, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon', NULL),
+(9, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon', NULL),
+(10, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon', NULL),
+(11, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon', NULL),
+(12, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon', NULL),
+(13, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon', NULL),
+(14, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon', NULL),
+(15, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon', NULL),
+(16, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon', NULL),
+(17, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon', NULL),
+(18, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon', NULL),
+(19, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon', NULL),
+(20, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon', NULL),
+(21, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon', NULL),
+(22, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon', NULL),
+(23, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon', NULL),
+(24, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon', NULL),
+(25, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon', NULL),
+(26, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon', NULL),
+(27, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon', NULL),
+(28, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon', NULL),
+(29, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon', NULL),
+(30, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon', NULL),
+(31, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon', NULL),
+(32, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon', NULL),
+(33, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon', NULL),
+(34, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon', NULL),
+(35, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon', NULL),
+(36, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon', NULL),
+(37, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon', NULL),
+(38, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', 'France', '645251452', 'Lyon', NULL),
+(39, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', NULL, '645251452', 'Lyon', 'France'),
+(40, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', NULL, '645251452', 'Lyon', 'France'),
+(41, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', NULL, '0645251452', 'Lyon', 'France'),
+(42, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', NULL, '0645251452', 'Lyon', 'France'),
+(43, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', NULL, '0645251452', 'Lyon', 'France'),
+(44, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', NULL, '0645251452', 'Lyon', 'France'),
+(45, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', NULL, '0645251452', 'Lyon', 'France'),
+(46, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', NULL, '0645251452', 'Lyon', 'France'),
+(47, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', NULL, '0645251452', 'Lyon', 'France'),
+(48, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', NULL, '0645251452', 'Lyon', 'France'),
+(49, '3 rue de 3 septembre 1944, 69009 Lyon', '69009', 's.grabou@gmail.com', 'Samir', 'Grabou', NULL, '0645251452', 'Lyon', 'France');
 
 -- --------------------------------------------------------
 
@@ -113,6 +131,7 @@ CREATE TABLE IF NOT EXISTS `merchant` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `description` varchar(255) DEFAULT NULL,
   `email` varchar(255) DEFAULT NULL,
+  `logo` varchar(255) DEFAULT NULL,
   `merchant_responseurl` varchar(255) DEFAULT NULL,
   `status` int(11) DEFAULT NULL,
   `mobile_number` varchar(255) DEFAULT NULL,
@@ -121,22 +140,22 @@ CREATE TABLE IF NOT EXISTS `merchant` (
   `payby_version` varchar(255) DEFAULT NULL,
   `private_key` varchar(255) DEFAULT NULL,
   `public_key` varchar(255) DEFAULT NULL,
+  `secret_key` varchar(255) DEFAULT NULL,
   `url_website` varchar(255) DEFAULT NULL,
   `user_name` varchar(255) DEFAULT NULL,
-  `logo` varchar(255) DEFAULT NULL,
   `walletid` bigint(20) DEFAULT NULL,
   PRIMARY KEY (`id`),
-  UNIQUE KEY `UK_qrbmtcse4j3lkm4x089bsw738` (`name`),
-  UNIQUE KEY `UK_2f53a79kul7fag2e8bk7a26up` (`user_name`),
-  KEY `FK273fyxfn6sd88opvxr2grbx5c` (`walletid`)
+  UNIQUE KEY `UK_hpejy4i1nk4u3251c6ba2pmpv` (`name`),
+  UNIQUE KEY `UK_datjm3tagd6d7f1bhqr93eest` (`user_name`),
+  KEY `FK414k596c3caigdkphkhhhwub6` (`walletid`)
 ) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
 --
 -- Déchargement des données de la table `merchant`
 --
 
-INSERT INTO `merchant` (`id`, `description`, `email`, `merchant_responseurl`, `status`, `mobile_number`, `name`, `payby_redirectionurl`, `payby_version`, `private_key`, `public_key`, `url_website`, `user_name`, `logo`, `walletid`) VALUES
-(1, 'samirSite', 'ssdsd@sdsds.com', 'http://localhost/prestashop/index.php?fc=module&module=PayBy&controller=reponse', 0, '04545454545', 'samir', 'http://localhost:8034/payby/payment/', '1.0', 'sdsdsdsdsffsfsf', 'sfsfsfsf', 'http://localhost', 'marchandUsername', 'media/merchant/logo_paracasa.jpg', 1);
+INSERT INTO `merchant` (`id`, `description`, `email`, `logo`, `merchant_responseurl`, `status`, `mobile_number`, `name`, `payby_redirectionurl`, `payby_version`, `private_key`, `public_key`, `secret_key`, `url_website`, `user_name`, `walletid`) VALUES
+(1, 'samirSite', 'ssdsd@sdsds.com', 'media/merchant/logo_paracasa.jpg', 'http://localhost/prestashop/index.php?fc=module&module=PayBy&controller=reponse', 0, '04545454545', 'samir', 'http://localhost:8034/payby/payment/', '1.0', 'sdsdsdsdsffsfsf', 'sfsfsfsf', 'paracasabglh65g-sbsp_8mc_n2yv0pn_u7#bk@(mw=6(-$hwl@$h9%2%0payby', 'http://localhost', 'marchantUsername', 1);
 
 -- --------------------------------------------------------
 
@@ -149,55 +168,50 @@ CREATE TABLE IF NOT EXISTS `paiement_order` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `amount` decimal(19,2) DEFAULT NULL,
   `creation_date` datetime DEFAULT NULL,
-  `merchant_orderid` varchar(255) DEFAULT NULL,
+  `merchand_orderid` varchar(255) DEFAULT NULL,
   `order_details` varchar(255) DEFAULT NULL,
   `order_status` int(11) DEFAULT NULL,
   `reference` varchar(255) DEFAULT NULL,
   `customerid` bigint(20) DEFAULT NULL,
+  `merchandid` bigint(20) DEFAULT NULL,
+  `merchant_orderid` varchar(255) DEFAULT NULL,
   `merchantid` bigint(20) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `UK_iug6uug61w5fjg3k83ee65udw` (`reference`),
+  KEY `FKrsl2idgc6vnov5ggwav708obi` (`merchandid`),
   KEY `FK2ytvysfvwd2ux2vosrj3fdhw0` (`customerid`),
-  KEY `FKrsl2idgc6vnov5ggwav708obi` (`merchantid`)
-) ENGINE=MyISAM AUTO_INCREMENT=33 DEFAULT CHARSET=latin1;
+  KEY `FKovjpj21gqelu5v8e5kjt3jgxg` (`merchantid`)
+) ENGINE=MyISAM AUTO_INCREMENT=50 DEFAULT CHARSET=latin1;
 
 --
 -- Déchargement des données de la table `paiement_order`
 --
 
-INSERT INTO `paiement_order` (`id`, `amount`, `creation_date`, `merchant_orderid`, `order_details`, `order_status`, `reference`, `customerid`, `merchantid`) VALUES
-(1, '300.00', '2019-08-05 01:20:05', '12345', 'e\'t(yrtt', 0, '4b48fd51-4cb6-48e1-96b1-6c9f73c0c109', 1, 1),
-(2, '4318.00', '2019-08-05 01:22:23', '6', ' Robe d\'été imprimée ', 0, '91ece03a-9ff7-45c5-ac23-55bc8e67f50a', 2, 1),
-(3, '4318.00', '2019-08-05 01:27:55', '6', ' Robe d\'été imprimée ', 0, '7b86ef83-87f4-4e4d-91c3-520ee742646f', 3, 1),
-(4, '4318.00', '2019-08-05 01:45:29', '6', ' Robe d\'été imprimée ', 0, 'bfd50ccf-84f4-4df7-81ed-c99839b61db6', 4, 1),
-(5, '4318.00', '2019-08-05 01:49:03', '6', ' Robe d\'été imprimée ', 0, 'cb62616b-2ec7-4904-8f6f-c81ce0e86937', 5, 1),
-(6, '4318.00', '2019-08-05 01:50:38', '6', ' Robe d\'été imprimée ', 0, 'e37ff570-19b5-4d7e-8e42-4a1370d15ee6', 6, 1),
-(7, '4318.00', '2019-08-19 10:37:58', '6', ' Robe d\'été imprimée ', 0, '411119cb-1aaf-4036-8a54-38ce7c69ff0c', 7, 1),
-(8, '4318.00', '2019-08-19 10:37:58', '6', ' Robe d\'été imprimée ', 0, 'a6176890-5cf0-401d-8df9-499c6dbf181c', 8, 1),
-(9, '4318.00', '2019-08-19 10:41:30', '6', ' Robe d\'été imprimée ', 0, '77e1267b-236f-48af-b9f5-80534c4745fa', 9, 1),
-(10, '4318.00', '2019-08-19 11:07:49', '6', ' Robe d\'été imprimée ', 0, '4bb05e68-1fe1-4fe5-b9ef-0b8fc0d10fe5', 10, 1),
-(11, '4318.00', '2019-08-19 11:08:38', '6', ' Robe d\'été imprimée ', 0, '43e07faa-ecb9-44c4-a011-12344683daf5', 11, 1),
-(12, '4318.00', '2019-08-19 13:02:46', '6', ' Robe d\'été imprimée ', 0, 'fe5d58b9-422d-4853-afc7-7021b2157230', 12, 1),
-(13, '4318.00', '2019-08-19 15:13:36', '6', ' Robe d\'été imprimée ', 0, '1bd31605-d196-4535-86bf-525c11b74411', 13, 1),
-(14, '4318.00', '2019-08-19 15:18:18', '6', ' Robe d\'été imprimée ', 0, '5813fae8-7d9c-40ec-8648-ed165bd52c26', 14, 1),
-(15, '4318.00', '2019-08-19 15:21:05', '6', ' Robe d\'été imprimée ', 0, '931f6888-db0b-4ac3-af2d-fe68b8ba0237', 15, 1),
-(16, '4318.00', '2019-08-19 15:29:17', '6', ' Robe d\'été imprimée ', 0, '8d584ab3-f144-49f1-89ee-96c3dbd6b889', 16, 1),
-(17, '4318.00', '2019-08-19 15:29:21', '6', ' Robe d\'été imprimée ', 0, 'd2697932-10ed-4873-a9e8-8d5e2ed2f339', 17, 1),
-(18, '4318.00', '2019-08-19 15:29:26', '6', ' Robe d\'été imprimée ', 0, '178a07bd-ac2e-4703-9bcd-261bdbb1c8b2', 18, 1),
-(19, '4318.00', '2019-08-19 15:29:31', '6', ' Robe d\'été imprimée ', 0, '969cc450-aead-43f4-b3b9-81d44b44205f', 19, 1),
-(20, '4318.00', '2019-08-19 15:29:35', '6', ' Robe d\'été imprimée ', 0, 'a1060ac0-8fae-4341-a461-0540f3c4641f', 20, 1),
-(21, '4318.00', '2019-08-19 15:29:59', '6', ' Robe d\'été imprimée ', 0, '35028e65-a387-4e7c-ae3c-e1d37c52cfae', 21, 1),
-(22, '4318.00', '2019-08-19 15:30:03', '6', ' Robe d\'été imprimée ', 0, '6688abd8-9208-4d40-a2ab-9a909dcc4818', 22, 1),
-(23, '4318.00', '2019-08-19 15:30:06', '6', ' Robe d\'été imprimée ', 0, '81b3426e-8974-4c76-a6ca-96c713925d52', 23, 1),
-(24, '4318.00', '2019-08-19 15:30:10', '6', ' Robe d\'été imprimée ', 0, '039c76b9-db78-4f8f-acad-cbc3e1c21647', 24, 1),
-(25, '4318.00', '2019-08-19 15:30:38', '6', ' Robe d\'été imprimée ', 0, 'a2857457-457f-44df-a20a-b75293bd565e', 25, 1),
-(26, '4318.00', '2019-08-19 15:30:42', '6', ' Robe d\'été imprimée ', 0, 'ca2ee195-8a67-4af2-8099-11ade5077360', 26, 1),
-(27, '4318.00', '2019-08-19 15:31:17', '6', ' Robe d\'été imprimée ', 0, '9bfdcd39-6adb-4970-8ba6-2faff7ceb3e9', 27, 1),
-(28, '4318.00', '2019-08-19 15:31:21', '6', ' Robe d\'été imprimée ', 0, 'c4335c9a-9425-486b-a82d-a3db82272b44', 28, 1),
-(29, '4318.00', '2019-08-19 15:31:24', '6', ' Robe d\'été imprimée ', 0, '58eebef4-52db-4d09-911d-735bf57284ce', 29, 1),
-(30, '4318.00', '2019-08-19 15:31:28', '6', ' Robe d\'été imprimée ', 0, 'b8cfbf99-0c87-4f5c-9b24-b4a54a5589b9', 30, 1),
-(31, '4318.00', '2019-08-19 15:32:20', '6', ' Robe d\'été imprimée ', 0, 'c62773fb-33bb-4020-bb8d-5b4a2f10d469', 31, 1),
-(32, '4318.00', '2019-08-19 15:32:24', '6', ' Robe d\'été imprimée ', 0, '93d46b42-5d9d-4d25-b714-a6a0e9ec7e0c', 32, 1);
+INSERT INTO `paiement_order` (`id`, `amount`, `creation_date`, `merchand_orderid`, `order_details`, `order_status`, `reference`, `customerid`, `merchandid`, `merchant_orderid`, `merchantid`) VALUES
+(26, '4318.00', '2019-08-19 15:30:42', '6', ' Robe d\'été imprimée ', 0, 'ca2ee195-8a67-4af2-8099-11ade5077360', 26, 1, NULL, NULL),
+(27, '4318.00', '2019-08-19 15:31:17', '6', ' Robe d\'été imprimée ', 0, '9bfdcd39-6adb-4970-8ba6-2faff7ceb3e9', 27, 1, NULL, NULL),
+(28, '4318.00', '2019-08-19 15:31:21', '6', ' Robe d\'été imprimée ', 0, 'c4335c9a-9425-486b-a82d-a3db82272b44', 28, 1, NULL, NULL),
+(29, '4318.00', '2019-08-19 15:31:24', '6', ' Robe d\'été imprimée ', 0, '58eebef4-52db-4d09-911d-735bf57284ce', 29, 1, NULL, NULL),
+(30, '4318.00', '2019-08-19 15:31:28', '6', ' Robe d\'été imprimée ', 0, 'b8cfbf99-0c87-4f5c-9b24-b4a54a5589b9', 30, 1, NULL, NULL),
+(31, '4318.00', '2019-08-19 15:32:20', '6', ' Robe d\'été imprimée ', 0, 'c62773fb-33bb-4020-bb8d-5b4a2f10d469', 31, 1, NULL, NULL),
+(32, '4318.00', '2019-08-19 15:32:24', '6', ' Robe d\'été imprimée ', 0, '93d46b42-5d9d-4d25-b714-a6a0e9ec7e0c', 32, 1, NULL, NULL),
+(33, '4318.00', '2019-08-19 21:49:33', '6', ' Robe d\'été imprimée ', 0, 'cefb3aa2-dcbb-4b18-ad1e-d0728b34b4ee', 33, 1, NULL, NULL),
+(34, '4318.00', '2019-08-19 21:50:07', '6', ' Robe d\'été imprimée ', 0, '8f7d2638-000c-4466-8da6-60ac1f05e55e', 34, 1, NULL, NULL),
+(35, '4318.00', '2019-08-19 22:08:21', '6', ' Robe d\'été imprimée ', 0, '02450f67-282c-45cf-b829-5ba3126eff12', 35, 1, NULL, NULL),
+(36, '4318.00', '2019-08-20 00:40:29', '6', ' Robe d\'été imprimée ', 0, '098aadd1-3576-47eb-b3ec-998c6343ab67', 36, 1, NULL, NULL),
+(37, '4318.00', '2019-08-20 21:40:42', '6', ' Robe d\'été imprimée ', 0, 'a97e7640-b4f9-493e-8404-be8f8b9f0ad0', 37, 1, NULL, NULL),
+(38, '3660.00', '2019-08-20 23:44:36', '7', ' Robe d\'été imprimée ', 1, 'a4d19540-9d57-4c7e-a8b7-ebae47e859ae', 38, 1, NULL, NULL),
+(39, '36.60', '2019-08-21 00:52:41', '8', ' Robe d\'été imprimée ', 1, '7c88df7e-e440-441f-9031-5ef04d07e8db', 39, 1, NULL, NULL),
+(40, '36.60', '2019-08-21 02:27:50', '8', ' Robe d\'été imprimée ', 0, '64a76ce1-729c-4f4e-9e88-5ff75da241fd', 40, 1, NULL, NULL),
+(41, '36.60', '2019-08-21 02:44:57', '8', ' Robe d\'été imprimée ', 0, '330695fa-8110-44b0-87bd-d31f7415f425', 41, 1, NULL, NULL),
+(42, '36.60', '2019-08-21 02:53:14', '8', ' Robe d\'été imprimée ', 1, '23577825-8e87-4127-961f-72a5133b5bb0', 42, 1, NULL, NULL),
+(43, '36.60', '2019-08-21 17:11:52', '8', ' Robe d\'été imprimée ', 1, '237c3fac-cf99-41fe-a3aa-df4981faf37a', 43, 1, NULL, NULL),
+(44, '71.38', '2019-08-21 23:30:20', NULL, ' Robe d\'été imprimée  - Robe d\'été imprimée ', 1, '25a72a95-1df6-47e0-b5b7-60ef01432378', 44, NULL, '8', 1),
+(45, '71.38', '2019-08-21 23:47:09', NULL, ' Robe d\'été imprimée  - Robe d\'été imprimée ', 1, 'bec73745-de9f-4fbc-bfe6-21a41f61f977', 45, NULL, '8', 1),
+(46, '36.60', '2019-08-22 00:03:50', NULL, ' Robe d\'été imprimée ', 1, '6277dad9-eb16-4e38-ac98-7bfb04a2fbda', 46, NULL, '9', 1),
+(47, '34.78', '2019-08-24 01:50:48', NULL, ' Robe d\'été imprimée ', 0, '94b82797-e785-4ef5-833d-3f24d593fc27', 47, NULL, '10', 1),
+(48, '69.55', '2019-08-24 16:46:04', NULL, ' Robe d\'été imprimée ', 1, '857d57a1-7735-4030-92f3-9c3d96e07176', 48, NULL, '10', 1),
+(49, '61.19', '2019-09-15 22:47:51', NULL, ' Robe imprimée ', 0, '509cc17d-d0f1-42ce-be3e-b9616a48536a', 49, NULL, '11', 1);
 
 -- --------------------------------------------------------
 
@@ -215,7 +229,45 @@ CREATE TABLE IF NOT EXISTS `paiement_wallet` (
   PRIMARY KEY (`id`),
   KEY `FKmatyi4q3jej064kd2tqu03633` (`orderid`),
   KEY `FKctnn8xka8y27d3ej54nral4tt` (`walletid`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=33 DEFAULT CHARSET=latin1;
+
+--
+-- Déchargement des données de la table `paiement_wallet`
+--
+
+INSERT INTO `paiement_wallet` (`id`, `date_status`, `order_status`, `orderid`, `walletid`) VALUES
+(1, '2019-08-20 21:46:19', 1, 6, NULL),
+(2, '2019-08-20 21:46:19', 1, 6, NULL),
+(3, '2019-08-20 21:46:19', 1, 6, NULL),
+(4, '2019-08-20 21:46:19', 1, 6, NULL),
+(5, '2019-08-20 21:46:19', 1, 6, NULL),
+(6, '2019-08-20 21:46:19', 1, 6, NULL),
+(7, '2019-08-20 21:46:19', 1, 6, NULL),
+(8, '2019-08-20 21:46:19', 1, 6, NULL),
+(9, '2019-08-20 21:46:19', 1, 6, NULL),
+(10, '2019-08-20 21:46:19', 1, 6, NULL),
+(11, '2019-08-20 21:46:19', 1, 6, NULL),
+(12, '2019-08-20 21:46:19', 1, 6, NULL),
+(13, '2019-08-20 21:46:19', 1, 38, NULL),
+(14, '2019-08-20 21:46:19', 1, 38, NULL),
+(15, '2019-08-20 21:46:19', 1, 39, NULL),
+(16, '2019-08-20 21:46:19', 1, 39, NULL),
+(17, '2019-08-20 21:46:19', 1, 39, NULL),
+(18, '2019-08-20 21:46:19', 1, 39, NULL),
+(19, '2019-08-20 21:46:19', 1, 39, NULL),
+(20, '2019-08-20 21:46:19', 1, 39, NULL),
+(21, '2019-08-20 21:46:19', 1, 39, NULL),
+(22, '2019-08-20 21:46:19', 1, 39, NULL),
+(23, '2019-08-20 21:46:19', 1, 39, NULL),
+(24, '2019-08-20 21:46:19', 1, 39, NULL),
+(25, '2019-08-20 21:46:19', 1, 42, NULL),
+(26, '2019-08-21 18:08:15', 0, 43, NULL),
+(27, '2019-08-21 18:08:15', 1, 43, NULL),
+(28, '2019-08-21 23:39:55', 1, 44, NULL),
+(29, '2019-08-21 23:39:55', 1, 45, NULL),
+(30, '2019-08-21 23:39:55', 1, 45, NULL),
+(31, '2019-08-21 23:39:55', 1, 46, NULL),
+(32, '2019-08-24 16:46:35', 1, 48, NULL);
 
 -- --------------------------------------------------------
 
@@ -256,6 +308,7 @@ CREATE TABLE IF NOT EXISTS `wallet` (
   `wallet_owner` varchar(255) DEFAULT NULL,
   `wallet_status` int(11) DEFAULT NULL,
   `logo` varchar(255) DEFAULT NULL,
+  `secret_key` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
@@ -263,10 +316,5 @@ CREATE TABLE IF NOT EXISTS `wallet` (
 -- Déchargement des données de la table `wallet`
 --
 
-INSERT INTO `wallet` (`id`, `api_key`, `private_key`, `public_key`, `wallet_description`, `wallet_name`, `wallet_owner`, `wallet_status`, `logo`) VALUES
-(1, 'API_KEY_SDSDSDSD', 'SDSDSDSDSDSD', 'SDSDSDSDSDSD', 'SOPAY', 'SOPAY', 'SG', 1, 'media/wallet/logo_sopay.png');
-COMMIT;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+INSERT INTO `wallet` (`id`, `api_key`, `private_key`, `public_key`, `wallet_description`, `wallet_name`, `wallet_owner`, `wallet_status`, `logo`, `secret_key`) VALUES
+(1, 'API_KEY_SDSDSDSD', 'SDSDSDSDSDSD', 'SDSDSDSDSDSD', 'SOPAY', 'SOPAY', 'SG', 1, 'media/wallet/logo_sopay.png', 'sopayim6(5$macgb3$8*9%ypc6aa8+f$5-o)1ix59ytygn!0umvan!9payby');
