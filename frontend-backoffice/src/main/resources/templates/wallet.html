@@ -32,6 +32,9 @@
     <!--end::Layout Skins -->
     <link rel="shortcut icon" href="assets/media/logos/favicon.ico" />
 
+    <!--Form -->
+    <link href="assets/css/form.css" rel="stylesheet" type="text/css"/>
+
 </head>
 <body class="kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header-mobile--fixed kt-subheader--enabled kt-subheader--fixed kt-subheader--solid kt-aside--enabled kt-aside--fixed kt-page--loading">
 
@@ -46,9 +49,32 @@
         <div class="kt-container  kt-container--fluid ">
             <div class="kt-subheader__main">
                 <h3 class="kt-subheader__title">Wallet</h3>
-                <a href="#" class="btn btn-label-warning btn-bold btn-sm btn-icon-h kt-margin-l-10">
+                <a href="#" class="btn btn-label-warning btn-bold btn-sm btn-icon-h kt-margin-l-10" id="addNewBtn">
                     Add New
                 </a>
+                <!-- The Form -->
+                <div id="myForm" class="form">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <form>
+                            Wallet:<br>
+                            <input type="text" name="wallet"><br>
+                            Établissement de paiement:<br>
+                            <input type="text" name="etablissement de paiement"><br>
+                            Description:<br>
+                            <input type="text" name="description"><br>
+                            Status:<br>
+                            <SELECT name="status" size="1">
+                                <OPTION>ACTIVE
+                                <OPTION>DESACTIVE
+                            </SELECT><br>
+                            <button type="submit" class="btn">Submit</button>
+                        </form>
+                    </div>
+
+                </div>
                 <div class="kt-input-icon kt-input-icon--right kt-subheader__search kt-hidden">
                     <input type="text" class="form-control" placeholder="Search order..." id="generalSearch">
                     <span class="kt-input-icon__icon kt-input-icon__icon--right">
@@ -166,6 +192,9 @@
 
 <!--begin::Page Scripts(used by this page) -->
 <script src="/assets/js/pages/wallet.js" type="text/javascript"></script>
+
+<!--Form script -->
+<script src="/assets/js/pages/form.js" type="text/javascript"></script>
 
 <!--end::Page Scripts -->
 </body>

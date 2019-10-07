@@ -8,6 +8,7 @@ var KTMerchant = function() {
             return;
         }
 
+
         var datatable = $('.kt-datatable').KTDatatable({
             data: {
                 type: 'remote',
