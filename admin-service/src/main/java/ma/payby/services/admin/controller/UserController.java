@@ -7,6 +7,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -31,10 +32,10 @@ public class UserController {
         return new ResponseEntity<>(userService.getAllUser(), HttpStatus.OK);
     }
 
-    @PostMapping("/api/v1/user")
+    @PostMapping(value ="/api/v1/user", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     public ResponseEntity<UserDTO> add(@RequestBody UserDTO userDTO) {
         LOGGER.info("UserDTO add: {}", userDTO);
-        return new ResponseEntity<>(userService.addUser(userDTO), HttpStatus.OK);
+        return new ResponseEntity<>(userService.addUser(userDTO), HttpStatus.CREATED);
     }
 
     @PostMapping("/api/v1/user/edit")

@@ -46,9 +46,15 @@
         <div class="kt-container  kt-container--fluid ">
             <div class="kt-subheader__main">
                 <h3 class="kt-subheader__title">Users</h3>
-                <a href="#" class="btn btn-label-warning btn-bold btn-sm btn-icon-h kt-margin-l-10">
-                    Add New
-                </a>
+                <!--   <a href="#" class="btn btn-label-warning btn-bold btn-sm btn-icon-h kt-margin-l-10">
+                     Add New
+                 </a>
+                 -->
+
+                <div class="text-center">
+                    <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalRegisterForm">
+                        Ajouter Utilisateur</a>
+                </div>
                 <div class="kt-input-icon kt-input-icon--right kt-subheader__search kt-hidden">
                     <input type="text" class="form-control" placeholder="Search order..." id="generalSearch">
                     <span class="kt-input-icon__icon kt-input-icon__icon--right">
@@ -58,6 +64,49 @@
             </div>
         </div>
     </div>
+    <!-- Button trigger modal -->
+    <div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h4 class="modal-title w-100 font-weight-bold">Ajout Utilisateur</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form id="userForm" method="POST"
+                      th:action="@{/user/actions/add}"
+                      th:object="${userForm}">
+
+                    <div class="modal-body mx-3">
+                        <div class="md-form mb-5">
+                            <i class="fas fa-user prefix grey-text"></i>
+                            <label data-error="wrong" data-success="right" for="name"></label>
+                            <input id="name" class="form-control validate" type="text" th:field="*{name}" />
+                        </div>
+                        <div class="md-form mb-5">
+                            <i class="fas fa-envelope prefix grey-text"></i>
+                            <label data-error="wrong" data-success="right" for="password"></label>
+                            <input id="password"  class="form-control validate" type="text" th:field="*{password}" />
+                        </div>
+
+                        <div class="md-form mb-4">
+                            <i class="fas fa-lock prefix grey-text"></i>
+                            <label data-error="wrong" data-success="right" for="roles"></label>
+                            <input id="roles" class="form-control validate" type="text" th:field="*{roles}" />
+                        </div>
+
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                        <button type="submit" class="btn btn-success">Valider</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
     <!-- end:: Header Mobile -->
 </div>
 
@@ -166,7 +215,46 @@
 
 <!--begin::Page Scripts(used by this page) -->
 <script src="/assets/js/pages/user.js" type="text/javascript"></script>
+<script th:inline="javascript">
+    /*<![CDATA[*/
+    $(document).ready(function () {
+        /*[+
+         var postUrl = [[@{/user/actions/add(
+         additionalParam=${#httpServletRequest.getParameter('additionalParam')}
+         )}]];
+         +]*/
+        $("#userForm").submit(function (e) {
+            e.preventDefault();
+            $.post(postUrl,
+                $(this).serialize(),
+                function (response) {
+                    var isErr = 'hasError';
+                    // when there are an error then show error
+                    if (response.indexOf(isErr) > -1) {
+                        $("#yourPanel").html(response);
+                    } else {
+                        var formData = $("#yourForm").serializeArray(),
+                            len = formData.length,
+                            urlEnd = '';
+                        for (i = 0; i < len; i++) {
+                            urlEnd += formData[i].name + '=' + encodeURIComponent(formData[i].value) + '&';
+                        }
 
+                        /*[+
+                         var urlReplacement = [[@{/user(
+                         additionalParam=${#httpServletRequest.getParameter('additionalParam')}
+                         )}]] + urlEnd;
+                         +]*/
+
+                        window.location.replace(urlReplacement);
+                    }
+                }
+            );
+            return false;
+        });
+    });
+    /*]]>*/
+</script>
 <!--end::Page Scripts -->
 </body>
 </html>
