@@ -68,7 +68,7 @@
     <!-- Button trigger modal -->
     <div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
          aria-hidden="true">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header text-center">
                     <h4 class="modal-title w-100 font-weight-bold">Ajout Utilisateur</h4>
@@ -81,73 +81,84 @@
                       th:object="${merchantForm}">
 
                     <div class="modal-body mx-3">
-                        <div class="md-form mb-5">
-                            <i class="fas fa-user prefix grey-text"></i>
-                            <label data-error="wrong" data-success="right" for="merchantUserName">MERCHANT</label>
-                            <input id="merchantUserName" class="form-control validate" type="text" th:field="*{name}" />
+                        <div class="row">
+                            <div class="md-form col-md-4">
+                                <i class="fas fa-user prefix grey-text"></i>
+                                <label data-error="wrong" data-success="right" for="merchantUserName">MERCHANT</label>
+                                <input id="merchantUserName" class="form-control validate" type="text" th:field="*{name}" />
+                            </div>
+                            <div class="md-form col-md-4">
+                                <i class="fas fa-user prefix grey-text"></i>
+                                <label data-error="wrong" data-success="right" for="merchantName">MERCHANT NAME</label>
+                                <input id="merchantName" class="form-control validate" type="text" th:field="*{userName}" />
+                            </div>
+                            <div class="md-form col-md-4">
+                                <i class="fas fa-envelope prefix grey-text"></i>
+                                <label data-error="wrong" data-success="right" for="urlWebsite">SITE WEB</label>
+                                <input id="urlWebsite"  class="form-control validate" type="text" th:field="*{urlWebsite}" />
+                            </div>
                         </div>
-                        <div class="md-form mb-5">
-                            <i class="fas fa-user prefix grey-text"></i>
-                            <label data-error="wrong" data-success="right" for="merchantName">MERCHANT NAME</label>
-                            <input id="merchantName" class="form-control validate" type="text" th:field="*{userName}" />
+                        <div class="row">
+                            <div class="md-form col-md-4">
+                                <i class="fas fa-envelope prefix grey-text"></i>
+                                <label data-error="wrong" data-success="right" for="mobileNumber">TELEPHONE</label>
+                                <input id="mobileNumber"  class="form-control validate" type="text" th:field="*{mobileNumber}" />
+                            </div>
+                            <div class="md-form col-md-4">
+                                <i class="fas fa-envelope prefix grey-text"></i>
+                                <label data-error="wrong" data-success="right" for="paybyRedirectionURL">PAYBY REDIRECTION URL</label>
+                                <input id="paybyRedirectionURL"  class="form-control validate" type="text" th:field="*{paybyRedirectionURL}" />
+                            </div>
+                            <div class="md-form col-md-4">
+                                <i class="fas fa-envelope prefix grey-text"></i>
+                                <label data-error="wrong" data-success="right" for="paybyVersion">PAYBY VERSION</label>
+                                <SELECT id="paybyVersion" class="form-control validate" size="1" th:field="*{paybyVersion}">
+                                    <OPTION th:value="'1.0'" th:text="1.0"></OPTION>
+                                </SELECT>
+                            </div>
                         </div>
-                        <div class="md-form mb-5">
-                            <i class="fas fa-envelope prefix grey-text"></i>
-                            <label data-error="wrong" data-success="right" for="urlWebsite">SITE WEB</label>
-                            <input id="urlWebsite"  class="form-control validate" type="text" th:field="*{urlWebsite}" />
+                        <div class="row">
+                            <div class="md-form col-md-4">
+                                <i class="fas fa-envelope prefix grey-text"></i>
+                                <label data-error="wrong" data-success="right" for="privateKey">PRIVATE KEY</label>
+                                <input id="privateKey"  class="form-control validate" type="text" th:field="*{privateKey}" />
+                            </div>
+                            <div class="md-form col-md-4">
+                                <i class="fas fa-envelope prefix grey-text"></i>
+                                <label data-error="wrong" data-success="right" for="publicKey">PUBLIC KEY</label>
+                                <input id="publicKey"  class="form-control validate" type="text" th:field="*{publicKey}" />
+                            </div>
+                            <div class="md-form col-md-4">
+                                <i class="fas fa-envelope prefix grey-text"></i>
+                                <label data-error="wrong" data-success="right" for="secretKey">SECRET KEY</label>
+                                <input id="secretKey"  class="form-control validate" type="text" th:field="*{secretKey}" />
+                            </div>
                         </div>
-                        <div class="md-form mb-5">
-                            <i class="fas fa-envelope prefix grey-text"></i>
-                            <label data-error="wrong" data-success="right" for="mobileNumber">TELEPHONE</label>
-                            <input id="mobileNumber"  class="form-control validate" type="text" th:field="*{mobileNumber}" />
-                        </div>
-                        <div class="md-form mb-5">
-                            <i class="fas fa-envelope prefix grey-text"></i>
-                            <label data-error="wrong" data-success="right" for="mobileNumber">PAYBY REDIRECTION URL</label>
-                            <input id="mobileNumber"  class="form-control validate" type="text" th:field="*{mobileNumber}" />
-                        </div>
-                        <div class="md-form mb-5">
-                            <i class="fas fa-envelope prefix grey-text"></i>
-                            <label data-error="wrong" data-success="right" for="paybyVersion">PAYBY VERSION</label>
-                            <SELECT id="paybyVersion" class="form-control validate" size="1" th:field="*{paybyVersion}">
-                                <OPTION th:value="'1.0'" th:text="1.0"></OPTION>
-                            </SELECT>
-                        </div>
-                        <div class="md-form mb-5">
-                            <i class="fas fa-envelope prefix grey-text"></i>
-                            <label data-error="wrong" data-success="right" for="privateKey">PRIVATE KEY</label>
-                            <input id="privateKey"  class="form-control validate" type="text" th:field="*{privateKey}" />
-                        </div>
-                        <div class="md-form mb-5">
-                            <i class="fas fa-envelope prefix grey-text"></i>
-                            <label data-error="wrong" data-success="right" for="publicKey">PUBLIC KEY</label>
-                            <input id="publicKey"  class="form-control validate" type="text" th:field="*{publicKey}" />
-                        </div>
-                        <div class="md-form mb-5">
-                            <i class="fas fa-envelope prefix grey-text"></i>
-                            <label data-error="wrong" data-success="right" for="secretKey">SECRET KEY</label>
-                            <input id="secretKey"  class="form-control validate" type="text" th:field="*{secretKey}" />
-                        </div>
-                        <div class="md-form mb-5">
-                            <i class="fas fa-envelope prefix grey-text"></i>
-                            <!-- Faire appel a Wallet via API REST chercher voir comment faire -->
-                            <label data-error="wrong" data-success="right" for="wallet">WALLET</label>
-                            <input id="wallet"  class="form-control validate" type="text" th:field="*{wallet}" />
-                        </div>
-                        <div class="md-form mb-5">
-                            <i class="fas fa-envelope prefix grey-text"></i>
-                            <label data-error="wrong" data-success="right" for="logo">LOGO</label>
-                            <input id="logo"  class="form-control validate" type="text" th:field="*{logo}" />
-                        </div>
-                        <div class="md-form mb-4">
-                            <i class="fas fa-lock prefix grey-text"></i>
-                            <label data-error="wrong" data-success="right" for="merchantStatus">STATUS</label>
-                            <SELECT id="merchantStatus" class="form-control validate" size="1" th:field="*{merchantStatus}">
+                        <div class="row">
+                            <div class="md-form col-md-4">
+                                <i class="fas fa-envelope prefix grey-text"></i>
+                                <!-- Faire appel a Wallet via API REST chercher voir comment faire -->
+                                <label data-error="wrong" data-success="right" for="wallet">WALLET</label>
+                                <input id="wallet"  class="form-control validate" type="text" th:field="*{wallet}" />
+                            </div>
+                            <div class="md-form col-md-4">
+                                <i class="fas fa-envelope prefix grey-text"></i>
+                                <label data-error="wrong" data-success="right" for="logo">LOGO</label>
+                                <input id="logo"  class="form-control validate" type="text" th:field="*{logo}" />
+                            </div>
+                            <div class="md-form col-md-4">
+                                <i class="fas fa-lock prefix grey-text"></i>
+                                <label data-error="wrong" data-success="right" for="merchantStatus">STATUS</label>
+                                <SELECT id="merchantStatus" class="form-control validate" size="1" th:field="*{merchantStatus}">
 
-                                <OPTION th:value="'Desactive'" th:text="DESACTIVE"></OPTION>
-                                <OPTION th:value="'Active'" th:text="ACTIVE"></OPTION>
-                            </SELECT>
+                                    <OPTION th:value="'Desactive'" th:text="DESACTIVE"></OPTION>
+                                    <OPTION th:value="'Active'" th:text="ACTIVE"></OPTION>
+                                </SELECT>
+                            </div>
                         </div>
+
+
+
 
                     </div>
                     <div class="modal-footer d-flex justify-content-center">
