@@ -67,7 +67,7 @@
     <!-- Button trigger modal -->
     <div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
          aria-hidden="true">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header text-center">
                     <h4 class="modal-title w-100 font-weight-bold">Ajout Utilisateur</h4>
@@ -80,26 +80,31 @@
                       th:object="${userForm}">
 
                     <div class="modal-body mx-3">
-                        <div class="md-form mb-5">
-                            <i class="fas fa-user prefix grey-text"></i>
-                            <label data-error="wrong" data-success="right" for="name">NAME</label>
-                            <input id="name" class="form-control validate" type="text" th:field="*{name}" />
-                        </div>
-                        <div class="md-form mb-5">
-                            <i class="fas fa-envelope prefix grey-text"></i>
-                            <label data-error="wrong" data-success="right" for="password">PASSWORD</label>
-                            <input id="password"  class="form-control validate" type="text" th:field="*{password}" />
+                        <div class="row">
+                            <div class="md-form col-md-4">
+                                <i class="fas fa-user prefix grey-text"></i>
+                                <label data-error="wrong" data-success="right" for="name">NAME</label>
+                                <input id="name" class="form-control validate" type="text" th:field="*{name}" />
+                            </div>
+                            <div class="md-form col-md-4">
+                                <i class="fas fa-envelope prefix grey-text"></i>
+                                <label data-error="wrong" data-success="right" for="password">PASSWORD</label>
+                                <input id="password"  class="form-control validate" type="text" th:field="*{password}" />
+                            </div>
+                            <div class="md-form col-md-4">
+                                <i class="fas fa-lock prefix grey-text"></i>
+                                <label data-error="wrong" data-success="right" for="roles">ROLES</label>
+                                <SELECT id="roles" class="form-control validate" size="1" th:field="*{roles}">
+
+                                    <OPTION th:value="'Admin'" th:text="ADMIN_ROLE"></OPTION>
+                                    <OPTION th:value="'User'" th:text="USER_ROLE"></OPTION>
+                                </SELECT>
+                            </div>
                         </div>
 
-                        <div class="md-form mb-4">
-                            <i class="fas fa-lock prefix grey-text"></i>
-                            <label data-error="wrong" data-success="right" for="roles">ROLES</label>
-                            <SELECT id="roles" class="form-control validate" size="1" th:field="*{roles}">
 
-                                <OPTION th:value="'Admin'" th:text="ADMIN_ROLE"></OPTION>
-                                <OPTION th:value="'User'" th:text="USER_ROLE"></OPTION>
-                            </SELECT>
-                        </div>
+
+
 
                     </div>
                     <div class="modal-footer d-flex justify-content-center">
