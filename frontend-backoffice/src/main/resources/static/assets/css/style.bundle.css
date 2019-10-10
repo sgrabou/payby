@@ -20766,7 +20766,8 @@ strong {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
-    flex-direction: row; }
+    flex-direction: row;
+     position: fixed;}
     .kt-grid.kt-grid--ver-desktop.kt-grid--desktop.kt-grid--root {
       -webkit-box-flex: 1;
       flex: 1;

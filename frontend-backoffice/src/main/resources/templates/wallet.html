@@ -32,8 +32,7 @@
     <!--end::Layout Skins -->
     <link rel="shortcut icon" href="assets/media/logos/favicon.ico" />
 
-    <!--Form -->
-    <link href="assets/css/form.css" rel="stylesheet" type="text/css"/>
+
 
 </head>
 <body class="kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header-mobile--fixed kt-subheader--enabled kt-subheader--fixed kt-subheader--solid kt-aside--enabled kt-aside--fixed kt-page--loading">
@@ -49,31 +48,12 @@
         <div class="kt-container  kt-container--fluid ">
             <div class="kt-subheader__main">
                 <h3 class="kt-subheader__title">Wallet</h3>
-                <a href="#" class="btn btn-label-warning btn-bold btn-sm btn-icon-h kt-margin-l-10" id="addNewBtn">
+                <!-- <a href="#" class="btn btn-label-warning btn-bold btn-sm btn-icon-h kt-margin-l-10" id="addNewBtn">
                     Add New
-                </a>
-                <!-- The Form -->
-                <div id="myForm" class="form">
-
-                    <!-- Modal content -->
-                    <div class="modal-content">
-                        <span class="close">&times;</span>
-                        <form>
-                            Wallet:<br>
-                            <input type="text" name="wallet"><br>
-                            Établissement de paiement:<br>
-                            <input type="text" name="etablissement de paiement"><br>
-                            Description:<br>
-                            <input type="text" name="description"><br>
-                            Status:<br>
-                            <SELECT name="status" size="1">
-                                <OPTION>ACTIVE
-                                <OPTION>DESACTIVE
-                            </SELECT><br>
-                            <button type="submit" class="btn">Submit</button>
-                        </form>
-                    </div>
-
+                </a> -->
+                <div class="text-center">
+                    <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalRegisterForm">
+                        Ajouter Utilisateur</a>
                 </div>
                 <div class="kt-input-icon kt-input-icon--right kt-subheader__search kt-hidden">
                     <input type="text" class="form-control" placeholder="Search order..." id="generalSearch">
@@ -81,6 +61,85 @@
 											<span><i class="flaticon2-search-1"></i></span>
 										</span>
                 </div>
+            </div>
+        </div>
+    </div>
+    <!-- Button trigger modal -->
+    <div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h4 class="modal-title w-100 font-weight-bold">Ajout Utilisateur</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form id="walletForm" method="POST"
+                      th:action="@{/wallet/actions/add}"
+                      th:object="${walletForm}">
+
+                    <div class="modal-body mx-3">
+                        <div class="md-form mb-5">
+                            <i class="fas fa-envelope prefix grey-text"></i>
+                            <label data-error="wrong" data-success="right" for="walletName">WALLET NAME</label>
+                            <input id="walletname"  class="form-control validate" type="text" th:field="*{walletName}" />
+                        </div>
+                        <div class="md-form mb-5">
+                            <i class="fas fa-envelope prefix grey-text"></i>
+                            <label data-error="wrong" data-success="right" for="logo">LOGO</label>
+                            <img id="logo" alt="logo" th:src="@{logo/logo}" width="250" height="250"/>
+                        </div>
+
+                        <div class="md-form mb-4">
+                            <i class="fas fa-lock prefix grey-text"></i>
+                            <label data-error="wrong" data-success="right" for="walletOwner">ETABLISSEMENT DE PAIEMENT</label>
+                            <SELECT id="walletOwner" class="form-control validate" size="1" th:field="*{walletOwner}">
+                                <OPTION th:value="'SG'" th:text="SocieteGeneral"></OPTION>
+                                <OPTION th:value="'BMCE'" th:text="BMCE"></OPTION>
+                                <OPTION th:value="'INWI'" th:text="Inwi"></OPTION>
+                            </SELECT>
+                        </div>
+
+                        <div class="md-form mb-5">
+                            <i class="fas fa-envelope prefix grey-text"></i>
+                            <label data-error="wrong" data-success="right" for="walletStatus">STATUS</label>
+                            <SELECT id="walletStatus" class="form-control validate" size="1" th:field="*{walletStatus}">
+                                <OPTION th:value="'Desactive'" th:text="Desactive"></OPTION>
+                                <OPTION th:value="'Active'" th:text="Active"></OPTION>
+                            </SELECT>
+                        </div>
+                        <div class="md-form mb-5">
+                            <i class="fas fa-envelope prefix grey-text"></i>
+                            <label data-error="wrong" data-success="right" for="privateKey">PRIVATE KEY</label>
+                            <input id="privateKey"  class="form-control validate" type="text" th:field="*{privateKey}" />
+                        </div>
+                        <div class="md-form mb-5">
+                            <i class="fas fa-envelope prefix grey-text"></i>
+                            <label data-error="wrong" data-success="right" for="publicKey">PUBLIC KEY</label>
+                            <input id="publicKey"  class="form-control validate" type="text" th:field="*{publicKey}" />
+                        </div>
+                        <div class="md-form mb-5">
+                            <i class="fas fa-envelope prefix grey-text"></i>
+                            <label data-error="wrong" data-success="right" for="secretKey">SECRET KEY</label>
+                            <input id="secretKey"  class="form-control validate" type="text" th:field="*{secretKey}" />
+                        </div>
+                        <div class="md-form mb-5">
+                            <i class="fas fa-envelope prefix grey-text"></i>
+                            <label data-error="wrong" data-success="right" for="apiKey">API KEY</label>
+                            <input id="apiKey"  class="form-control validate" type="text" th:field="*{apiKey}" />
+                        </div>
+                        <div class="md-form mb-5">
+                            <i class="fas fa-envelope prefix grey-text"></i>
+                            <label data-error="wrong" data-success="right" for="walletDescription">Description</label>
+                            <input id="walletDescription"  class="form-control validate" type="text" th:field="*{walletDescription}" />
+                        </div>
+                    </div>
+
+                    <div class="modal-footer d-flex justify-content-center">
+                        <button type="submit" class="btn btn-success">Valider</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
@@ -193,8 +252,47 @@
 <!--begin::Page Scripts(used by this page) -->
 <script src="/assets/js/pages/wallet.js" type="text/javascript"></script>
 
-<!--Form script -->
-<script src="/assets/js/pages/form.js" type="text/javascript"></script>
+<script th:inline="javascript">
+  /*<![CDATA[*/
+  $(document).ready(function () {
+    /*[+
+     var postUrl = [[@{/wallet/actions/add(
+     additionalParam=${#httpServletRequest.getParameter('additionalParam')}
+     )}]];
+     +]*/
+    $("#walletForm").submit(function (e) {
+      e.preventDefault();
+      $.post(postUrl,
+        $(this).serialize(),
+        function (response) {
+          var isErr = 'hasError';
+          // when there are an error then show error
+          if (response.indexOf(isErr) > -1) {
+            $("#yourPanel").html(response);
+          } else {
+            var formData = $("#yourForm").serializeArray(),
+              len = formData.length,
+              urlEnd = '';
+            for (i = 0; i < len; i++) {
+              urlEnd += formData[i].name + '=' + encodeURIComponent(formData[i].value) + '&';
+            }
+
+            /*[+
+             var urlReplacement = [[@{/wallet(
+             additionalParam=${#httpServletRequest.getParameter('additionalParam')}
+             )}]] + urlEnd;
+             +]*/
+
+            window.location.replace(urlReplacement);
+          }
+        }
+      );
+      return false;
+    });
+  });
+
+  /*]]>*/
+</script>
 
 <!--end::Page Scripts -->
 </body>

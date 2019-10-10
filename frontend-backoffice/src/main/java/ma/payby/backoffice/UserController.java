@@ -47,7 +47,7 @@ public class UserController {
 		HttpEntity<UserDTO> request = new HttpEntity<>(userForm, headers);
 		LOGGER.info("Call Api User username: " +userForm.getName());
 		ResponseEntity<Object> response = restTemplate.exchange(
-				"http://api.payby:8060/admin/api/v1/user", HttpMethod.POST, request, Object.class);
+				"http://localhost:8060/admin/api/v1/user", HttpMethod.POST, request, Object.class);
 		additionalParam = 1;
 		redirectAttributes.addAttribute("additionalParam", additionalParam);
 		return "redirect:/user";

@@ -82,19 +82,23 @@
                     <div class="modal-body mx-3">
                         <div class="md-form mb-5">
                             <i class="fas fa-user prefix grey-text"></i>
-                            <label data-error="wrong" data-success="right" for="name"></label>
+                            <label data-error="wrong" data-success="right" for="name">NAME</label>
                             <input id="name" class="form-control validate" type="text" th:field="*{name}" />
                         </div>
                         <div class="md-form mb-5">
                             <i class="fas fa-envelope prefix grey-text"></i>
-                            <label data-error="wrong" data-success="right" for="password"></label>
+                            <label data-error="wrong" data-success="right" for="password">PASSWORD</label>
                             <input id="password"  class="form-control validate" type="text" th:field="*{password}" />
                         </div>
 
                         <div class="md-form mb-4">
                             <i class="fas fa-lock prefix grey-text"></i>
-                            <label data-error="wrong" data-success="right" for="roles"></label>
-                            <input id="roles" class="form-control validate" type="text" th:field="*{roles}" />
+                            <label data-error="wrong" data-success="right" for="roles">ROLES</label>
+                            <SELECT id="roles" class="form-control validate" size="1" th:field="*{roles}">
+
+                                <OPTION th:value="'Admin'" th:text="ADMIN_ROLE"></OPTION>
+                                <OPTION th:value="'User'" th:text="USER_ROLE"></OPTION>
+                            </SELECT>
                         </div>
 
                     </div>
@@ -253,6 +257,7 @@
             return false;
         });
     });
+    
     /*]]>*/
 </script>
 <!--end::Page Scripts -->
